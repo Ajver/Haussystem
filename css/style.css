@@ -47,13 +47,10 @@ body {
 .hamburger {
   width: 60px;
   height: 60px;
-<<<<<<< HEAD
   margin-right: 40px;
   margin-top: 40px;
-=======
   margin-right: 20px;
   margin-top: 20px;
->>>>>>> gh-pages
 }
 .hamburger-block{
 	width: 100%;
