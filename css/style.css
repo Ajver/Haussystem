@@ -28,6 +28,7 @@ body {
   z-index: 100;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
   top: 0;
   left: 0;
   width: 100vw;
@@ -51,17 +52,20 @@ body {
 }
 .hamburger-block{
 	width: 100%;
-	height: 10px;
-	background-color: red;
+	height: 8px;
+	background-color: #505050;
 	transition: 0.4s;
 	border-radius: 5px;
+}
+.hamburger-block.active{
+	background-color: #ff8b12;
 }
 
 .hamburger-block.middle{
 	margin: 8px 0;
 }
 .hamburger-block.top.active{
-	transform: translate(0, 18px) rotate(45deg);
+	transform: translate(0, 16px) rotate(45deg);
 }
 .hamburger-block.middle.active{
 	-webkit-transform: scale(0);
@@ -70,7 +74,7 @@ body {
 	transform: scale(0);
 }
 .hamburger-block.bottom.active{
-	transform: translate(0, -18px) rotate(-45deg);
+	transform: translate(0, -16px) rotate(-45deg);
 }
 header .main-nav {
   display: none;
