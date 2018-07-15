@@ -44,24 +44,24 @@ body {
 }
 
 .hamburger {
-  width: 60px;
-  height: 60px;
-  margin-right: 40px;
-  margin-top: 40px;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 .hamburger-block{
 	width: 100%;
-	height: 12px;
+	height: 10px;
 	background-color: #ff8b12;
 	transition: 0.4s;
 	border-radius: 5px;
 }
 
 .hamburger-block.middle{
-	margin: 10px 0;
+	margin: 8px 0;
 }
 .hamburger-block.top.active{
-	transform: translate(0, 22px) rotate(45deg);
+	transform: translate(0, 18px) rotate(45deg);
 }
 .hamburger-block.middle.active{
 	-webkit-transform: scale(0);
@@ -70,7 +70,7 @@ body {
 	transform: scale(0);
 }
 .hamburger-block.bottom.active{
-	transform: translate(0, -22px) rotate(-45deg);
+	transform: translate(0, -18px) rotate(-45deg);
 }
 header .main-nav {
   display: none;
