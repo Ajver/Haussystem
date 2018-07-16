@@ -17,7 +17,8 @@ html {
 
 body {
   /*  font-family: 'RollandinEmilie';*/
-  font-family: 'Inconsolata', monospace;
+  font-family: 'IBM Plex Mono', monospace;
+	font-weight: 500;
   color: #ffffff;
 }
 
@@ -125,18 +126,23 @@ main {
   box-sizing: border-box;
   padding: 0 15px;
 	padding-top:20px;
-  font-size: 20rem;
+  font-size: 17rem;
   background-image: url("../img/1.jpg");
   background-size: cover;
   -webkit-box-shadow: 0px 20px 30px 0px white inset;
   -moz-box-shadow: 0px 20px 30px 0px white inset;
   -ms-box-shadow: 0px 20px 30px 0px white inset;
   color: black;
+	text-shadow: 0 0 10px white;
 }
 
 h1 {
   margin: 20px 0;
   font-size: 30rem;
+	font-weight: 600;
+	font-style: italic;
+	letter-spacing: 4px;
+	text-transform: uppercase;
 }
 
 p {
