@@ -33,7 +33,6 @@ body {
   left: 0;
   width: 100vw;
   height: 120px;
-  border-bottom: 1px solid #ff8b12;
 }
 
 .logo {
@@ -63,7 +62,7 @@ body {
   border-radius: 5px;
 }
 
-.hamburger-block.active {
+.page-header.opened-nav .hamburger-block {
   background-color: #ff8b12;
 }
 
@@ -71,18 +70,18 @@ body {
   margin: 8px 0;
 }
 
-.hamburger-block.top.active {
+.page-header.opened-nav .hamburger-block.top {
   transform: translate(0, 16px) rotate(45deg);
 }
 
-.hamburger-block.middle.active {
+.page-header.opened-nav .hamburger-block.middle {
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
 }
 
-.hamburger-block.bottom.active {
+.page-header.opened-nav .hamburger-block.bottom {
   transform: translate(0, -16px) rotate(-45deg);
 }
 
@@ -91,20 +90,19 @@ body {
   position: absolute;
   top: 120px;
   width: 100%;
+  height: 0;
   background-color: white;
   border-bottom: 1px solid #ff8b12;
-}
-
-.main-nav-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15px;
-  padding-top: 0;
+  overflow: hidden;
+
+  transition: height .5s;
 }
 
-.main-nav.open {
-  max-height: 800px;
+.page-header.opened-nav .main-nav {
+  height: 200px;
 }
 
 .menu-btn {
@@ -112,6 +110,16 @@ body {
   color: #505050;
   font-size: 25rem;
   margin: 8px 0;
+}
+
+.menu-btn::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin-right: 20px;
+  transform: translateY(20%);
+  background-color: red;
 }
 
 .menu-btn:active {
