@@ -7,14 +7,15 @@
 	margin: 20px 0;
 	display:flex;
 	text-align: center;
-	padding-top: 15px;
+	padding: 15px 0;
+    padding-bottom: 0;
 	
 	overflow: hidden;
 	
-	transition: max-height 1s, padding-bottom 0.5s;
+	transition: max-height 1s, box-shadow 1s;
 }
 .one-offer:hover{
 	box-shadow: 0 8px 16px 0 #505050;
 	max-height: 500px;
-	padding-bottom: 15px;
+    padding-bottom: 15px;
 }
