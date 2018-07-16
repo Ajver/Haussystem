@@ -85,9 +85,6 @@ body {
 .hamburger-block.bottom.active {
   transform: translate(0, -16px) rotate(-45deg);
 }
-
-main-nav-continer {}
-
 .main-nav {
   display: none;
   position: absolute;
