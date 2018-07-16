@@ -32,7 +32,7 @@ body {
   left: 0;
   width: 100vw;
   height: 128px;
-  border-bottom: 1px solid #505050;
+  border-bottom: 1px solid #ff8b12;
 }
 
 .logo {
@@ -93,7 +93,7 @@ main-nav-continer {}
   top: 20vh;
   width: 100%;
   background-color: white;
-  border-bottom: 1px solid #505050;
+  border-bottom: 1px solid #ff8b12;
 }
 
 .main-nav-box {
@@ -124,6 +124,7 @@ main {
   height: 100%;
   box-sizing: border-box;
   padding: 0 15px;
+	padding-top:20px;
   font-size: 20rem;
   background-image: url("../img/1.jpg");
   background-size: cover;
