@@ -110,8 +110,8 @@ body {
   color: #505050;
   font-size: 25rem;
   margin: 8px 0;
-	
-	transition: .3s;
+
+  transition: .3s;
 }
 
 .menu-btn::before {
@@ -126,9 +126,11 @@ body {
 .menu-btn.about-us-btn::before {
   background: url(../img/engineer.png);
 }
+
 .menu-btn.offer-btn::before {
   background: url(../img/sketch.png);
 }
+
 .menu-btn.contact-btn::before {
   background: url(../img/phone-call.png);
 }
@@ -202,20 +204,24 @@ p {
 .page-footer .contact {
   color: #ff8b12;
 }
-.page-footer.contact.phone::before{
-	content: "";
-	background: url(../img/phone.png);
-	width: 24rem;
-	height: 24rem;
-	display: block;
+
+.page-footer .contact::before {
+  content: "";
+  width: 24rem;
+  height: 24rem;
+  transform: translateY(25%);
+  margin-right: 10rem;
+  display: inline-block;
 }
-.page-footer.contact.mail::before{
-	content: "";
-	background-color: url(../img/mail.png);
-	width: 24rem;
-	height: 24rem;
-	display: block;
+
+.page-footer .contact.phone::before {
+  background: url(../img/phone.png);
 }
+
+.page-footer .contact.mail::before {
+  background-image: url(../img/mail.png);
+}
+
 .page-footer .google-map {
   width: 100%;
   height: 50vw;
