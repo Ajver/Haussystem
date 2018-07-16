@@ -4,6 +4,6 @@
 	menu = $('.main-nav');
 	menuBtn.on('click', function() {
 		menuBtnBlock.toggleClass('active');
-		menu.slideToggle(200, function(){});
+		menu.slideToggle(500, function(){});
 	});
 })();
