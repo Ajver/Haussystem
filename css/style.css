@@ -32,10 +32,9 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 128px;
+  height: 120px;
   border-bottom: 1px solid #ff8b12;
 }
-
 .logo {
   width: 220px;
   max-width: 400px;
