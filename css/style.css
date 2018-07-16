@@ -202,7 +202,20 @@ p {
 .page-footer .contact {
   color: #ff8b12;
 }
-
+.page-footer.contact.phone::before{
+	content: "";
+	background: url(../img/phone.png);
+	width: 24rem;
+	height: 24rem;
+	display: block;
+}
+.page-footer.contact.mail::before{
+	content: "";
+	background-color: url(../img/mail.png);
+	width: 24rem;
+	height: 24rem;
+	display: block;
+}
 .page-footer .google-map {
   width: 100%;
   height: 50vw;
