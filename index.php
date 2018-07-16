@@ -26,7 +26,6 @@
       <a title="Skontaktuj się z nami" class="menu-btn contact-btn" href="index.html">Kontakt</a>
     </nav>
   </header>
-  <div class="main-background"></div>
   <main>
     <header>
       <h1>O nas</h1>
