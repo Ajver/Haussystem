@@ -131,7 +131,7 @@ body {
   background: url(../img/phone-call.png);
 }
 
-.menu-btn:active {
+.menu-btn:hover {
   color: #ff8b12;
 }
 
