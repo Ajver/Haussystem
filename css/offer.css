@@ -1,0 +1,14 @@
+.one-offer{
+	width: 100%;
+	height: 40px;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 #404040;
+	margin: 20px 0;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.3s;
+}
+.one-offer:hover{
+	box-shadow: 0 8px 16px 0 #505050;
+}
