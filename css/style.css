@@ -90,7 +90,7 @@ main-nav-continer {}
 .main-nav {
   display: none;
   position: absolute;
-  top: 20vh;
+  top: 120px;
   width: 100%;
   background-color: white;
   border-bottom: 1px solid #ff8b12;
