@@ -124,7 +124,7 @@ main {
   height: 100%;
   box-sizing: border-box;
   padding: 0 15px;
-	padding-top:20px;
+  padding-top: 20px;
   font-size: 20rem;
   background-image: url("../img/1.jpg");
   background-size: cover;
