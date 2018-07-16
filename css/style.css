@@ -111,15 +111,15 @@ body {
   font-size: 25rem;
   margin: 8px 0;
 	
-	transition: .3s;
+  transition: .3s;
 }
 
 .menu-btn::before {
   content: "";
-  width: 32px;
-  height: 32px;
+  width: 32rem;
+  height: 32rem;
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 20rem;
   transform: translateY(20%);
 }
 
