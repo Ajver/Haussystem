@@ -127,7 +127,7 @@ main {
   padding-top: 20px;
   font-size: 17rem;
   color: black;
-  text-shadow: 0 0 10px white;
+  text-shadow: 0 0 10px #ddd;
 }
 
 .main-background {
