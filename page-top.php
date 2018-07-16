@@ -23,7 +23,7 @@
     <nav class="main-nav">
       <a title="Poczytaj czym się zajmujemy" class="menu-btn about-us-btn" href="haussystem-o-nas">O nas</a>
       <a title="Poznaj naszą ofertę" class="menu-btn offer-btn" href="nasza-oferta">Oferta</a>
-      <a title="Skontaktuj się z nami" class="menu-btn contact-btn" href="kontakt-z-nami">Kontakt</a>
+      <a title="Skontaktuj się z nami" class="menu-btn contact-btn" href="kontakt-do-nas">Kontakt</a>
     </nav>
   </header>
   <main>
