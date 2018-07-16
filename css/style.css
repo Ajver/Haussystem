@@ -157,6 +157,7 @@ p {
   overflow: auto;
   box-sizing: border-box;
   padding: 15px;
+	padding-bottom: 5px;
   font-size: 14rem;
 }
 
