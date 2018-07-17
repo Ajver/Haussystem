@@ -12,7 +12,7 @@
     </aside>
   </footer>
 
-  <script src="js/main.js?5" type="text/javascript"></script>
+  <script src="js/main.js?6" type="text/javascript"></script>
 
 </body>
 
