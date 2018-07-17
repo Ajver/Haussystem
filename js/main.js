@@ -23,5 +23,7 @@ for (let i = 0; i < offer.length; i++) {
     }
 
     this.classList.toggle("opened-offer");
+		this.scrollTo(this, 500);
+		
   }, false);
 }

@@ -33,4 +33,6 @@
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut voluptates blanditiis dolorum in, ipsum ratione iusto corrupti et suscipit asperiores nobis nihil dolor totam enim at unde? Eveniet, iure, accusantium.</p>
 </div>
 
+<script src="js/jquery.scrollTo.min.js" type="text/jscript"></script>
+
 <?php include('page-bottom.php') ?>
