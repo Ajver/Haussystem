@@ -24,7 +24,13 @@ for (let i = 0; i < offer.length; i++) {
 
     this.classList.toggle("opened-offer");
 
-    $.scrollTo($('.one-offer.opened-offer'), 500);
-		
+    if(document.querySelector(".one-offer.opened-offer") !== null) {
+      var yy = document.querySelector(".one-offer.opened-offer").offsetTop - 110;
+
+      console.log(yy);
+
+      $.scrollTo(yy, 500);
+    }
+    
   }, false);
 }
