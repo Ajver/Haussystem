@@ -153,7 +153,7 @@ main {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-	overflow: auto;
+  overflow: auto;
 }
 
 h1 {

@@ -9,3 +9,4 @@ ham.addEventListener("click", function () {
   var pageHeader = document.querySelector(".page-header");
   pageHeader.classList.toggle("opened-nav");
 }, false);
+
