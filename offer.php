@@ -1,5 +1,5 @@
 <?php include('page-top.php') ?>
-<link rel="stylesheet" href="css/offer.css?1">
+<link rel="stylesheet" href="css/offer.css?2">
 
 <header>
   <h1>Oferta</h1>

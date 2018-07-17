@@ -1,5 +1,5 @@
 <?php include('page-top.php') ?>
-  <link rel="stylesheet" href="css/offer.css">
+  <link rel="stylesheet" href="css/contact.css">
 
   <header>
     <h1>Kontakt</h1>
