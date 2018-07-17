@@ -176,6 +176,7 @@ p {
   padding: 15px;
   padding-bottom: 5px;
   font-size: 14rem;
+	border-top: 1px solid #ff8b12;
 }
 
 .page-footer h2 {
