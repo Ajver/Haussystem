@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext" rel="stylesheet">
   <link rel="shortcut icon" href="img/icon.png?1">
-  <link rel="stylesheet" href="css/style.css?3">
+  <link rel="stylesheet" href="css/style.css?1">
 </head>
 
 <body>

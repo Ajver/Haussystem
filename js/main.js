@@ -23,5 +23,14 @@ for (let i = 0; i < offer.length; i++) {
     }
 
     this.classList.toggle("opened-offer");
+
+    window.setTimeout(function() { 
+      if(document.querySelector(".one-offer.opened-offer") !== null) {
+        var yy = document.querySelector(".one-offer.opened-offer").offsetTop - 110;
+
+        $.scrollTo(yy, 500);
+      }
+    }, 1000);
+    
   }, false);
 }
