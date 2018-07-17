@@ -1,6 +1,10 @@
 <?php include('page-top.php') ?>
 <link rel="stylesheet" href="css/offer.css">
 
+<header>
+  <h1>Oferta</h1>
+</header>
+
 <div class="one-offer">
   <header>
     Pierwsza oferta
