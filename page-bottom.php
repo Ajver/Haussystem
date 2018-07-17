@@ -1,7 +1,7 @@
   </main>
   <footer class="page-footer">
     <header>
-      <h2>Skontaktuj się z Piotrem:</h2>
+      <h2>Skontaktuj się z nami:</h2>
     </header>
     <p class="contact phone">+48 111 222 333</p>
     <p class="contact mail">piotr@example.com</p>
