@@ -102,7 +102,7 @@ body {
 }
 
 .page-header.opened-nav .main-nav {
-  height: 200px;
+  height: 250px;
 }
 
 .menu-btn {
@@ -110,6 +110,8 @@ body {
   color: #505050;
   font-size: 25rem;
   margin: 8px 0;
+	padding: 7px;
+	border: 2px solid transparent;
 
   transition: .3s;
 }
@@ -134,11 +136,9 @@ body {
 .menu-btn.contact-btn::before {
   background: url(../img/phone-call.png);
 }
-
-.menu-btn:hover {
-  color: #ff8b12;
+.menu-btn:hover{
+	border-color: #ff8b12;
 }
-
 main {
   margin-top: 100px;
   width: 100%;
@@ -226,3 +226,4 @@ p {
   color: #ff8b12;
   text-decoration: none;
 }
+
