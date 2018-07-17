@@ -14,21 +14,21 @@
 
 <div class="one-offer">
   <header>
-    Pierwsza oferta
+    Druga oferta
   </header>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut voluptates blanditiis dolorum in, ipsum ratione iusto corrupti et suscipit asperiores nobis nihil dolor totam enim at unde? Eveniet, iure, accusantium.</p>
 </div>
 
 <div class="one-offer">
   <header>
-    Pierwsza oferta
+    Trzecia oferta
   </header>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut voluptates blanditiis dolorum in, ipsum ratione iusto corrupti et suscipit asperiores nobis nihil dolor totam enim at unde? Eveniet, iure, accusantium.</p>
 </div>
 
 <div class="one-offer">
   <header>
-    Pierwsza oferta
+    Czwarta oferta
   </header>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut voluptates blanditiis dolorum in, ipsum ratione iusto corrupti et suscipit asperiores nobis nihil dolor totam enim at unde? Eveniet, iure, accusantium.</p>
 </div>
