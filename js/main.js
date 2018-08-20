@@ -1,3 +1,12 @@
+
+window.addEventListener("scroll", function(e) {
+  var offerTop = $(".offers").offset().top - ($(window).height() / 1.5);
+  
+  if($(window).scrollTop() >= offerTop) {
+    document.querySelector(".offers").classList.add("fadeIn");
+  }
+}, false);
+
 document.getElementById("about-us-btn").addEventListener("click", function () {
   scrollToSection(document.querySelector('.about-us').offsetTop - 120);
 }, false);
@@ -12,12 +21,24 @@ var scrollToSection = function (yy) {
   $.scrollTo(yy, 500);
   var pageHeader = document.querySelector(".page-header");
   pageHeader.classList.remove("opened-nav");
+  
+  var menuBtns = document.getElementsByClassName("menu-btn");
+  
+  for(var i=0; i<menuBtns.length; i++) {
+    menuBtns.item(i).classList.remove("slideInDown");
+  }
 }
 
 var ham = document.querySelector(".hamburger");
 ham.addEventListener("click", function () {
   var pageHeader = document.querySelector(".page-header");
   pageHeader.classList.toggle("opened-nav");
+  
+  var menuBtns = document.getElementsByClassName("menu-btn");
+  
+  for(var i=0; i<menuBtns.length; i++) {
+    menuBtns.item(i).classList.toggle("slideInDown");
+  }
 }, false);
 
 var offer = document.getElementsByClassName("one-offer");
