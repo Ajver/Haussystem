@@ -21,21 +21,24 @@
       <div class="hamburger-block bottom"></div>
     </div>
     <nav class="main-nav">
-      <a title="Poczytaj czym się zajmujemy" class="menu-btn about-us-btn" href="haussystem-o-nas">O nas</a>
-      <a title="Poznaj naszą ofertę" class="menu-btn offer-btn" href="nasza-oferta">Oferta</a>
-      <a title="Skontaktuj się z nami" class="menu-btn contact-btn" href="kontakt-do-nas">Kontakt</a>
+      <a title="Poczytaj czym się zajmujemy" class="menu-btn about-us-btn">O nas</a>
+      <a title="Poznaj naszą ofertę" class="menu-btn offer-btn" >Oferta</a>
+      <a title="Skontaktuj się z nami" class="menu-btn contact-btn">Kontakt</a>
     </nav>
   </header>
   <main>
    
+   <section class="o-nas">
+			<header>
+				<h1>O nas</h1>
+			</header>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, beatae a! Ipsam explicabo deleniti harum, similique doloribus quam atque. A eligendi, harum laborum esse ipsum nihil adipisci vel sequi voluptate!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, beatae a! Ipsam explicabo deleniti harum, similique doloribus quam atque. A eligendi, harum laborum esse ipsum nihil adipisci vel sequi voluptate!</p>
+   </section>
+   
+   <section>
     <header>
-      <h1>O nas</h1>
-    </header>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, beatae a! Ipsam explicabo deleniti harum, similique doloribus quam atque. A eligendi, harum laborum esse ipsum nihil adipisci vel sequi voluptate!</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, beatae a! Ipsam explicabo deleniti harum, similique doloribus quam atque. A eligendi, harum laborum esse ipsum nihil adipisci vel sequi voluptate!</p>
-    
-    <header>
-  <h1>Oferta</h1>
+  		<h1>Oferta</h1>
 		</header>
 
 		<div class="one-offer">
@@ -65,6 +68,8 @@
 			</header>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut voluptates blanditiis dolorum in, ipsum ratione iusto corrupti et suscipit asperiores nobis nihil dolor totam enim at unde? Eveniet, iure, accusantium.</p>
 		</div>
+		
+	</section>
 
  </main>
   <footer class="page-footer">

@@ -228,6 +228,14 @@ p {
   color: #ff8b12;
   text-decoration: none;
 }
+section{
+	background-color: rgba(237, 237, 237,0.7);
+	padding: 15px;
+	border: solid 1px #aaa;
+}
+.o-nas{
+	margin-bottom: 20px;
+}
 
 /*===========================================*/
 
