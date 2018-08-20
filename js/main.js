@@ -16,21 +16,26 @@ for (let i = 0; i < offer.length; i++) {
   offer[i].addEventListener("click", function () {
     var otherOffers = document.getElementsByClassName("one-offer");
 
+    var onlyEl = true;
+
     for (var j = 0; j < otherOffers.length; j++) {
       if (j !== i) {
-        otherOffers[j].classList.remove("opened-offer");
+        if (otherOffers[j].classList.contains("opened-offer")) {
+          otherOffers[j].classList.remove("opened-offer");
+          onlyEl = false;
+        }
       }
     }
 
     this.classList.toggle("opened-offer");
 
-    window.setTimeout(function() { 
-      if(document.querySelector(".one-offer.opened-offer") !== null) {
+    window.setTimeout(function () {
+      if (document.querySelector(".one-offer.opened-offer") !== null) {
         var yy = document.querySelector(".one-offer.opened-offer").offsetTop - 110;
 
-        $.scrollTo(yy, 500);
+        $.scrollTo(yy, 350);
       }
-    }, 1000);
-    
+    }, onlyEl ? 100 : 1000);
+
   }, false);
 }
