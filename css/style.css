@@ -253,7 +253,7 @@ section{
   cursor: pointer;
 	border-bottom: 1px solid #ff8b12;
 
-  transition: all 1s;
+  transition: all .7s;
 }
 
 .one-offer header {

@@ -35,7 +35,7 @@ for (let i = 0; i < offer.length; i++) {
 
         $.scrollTo(yy, 350);
       }
-    }, onlyEl ? 100 : 1000);
+    }, onlyEl ? 100 : 700);
 
   }, false);
 }
