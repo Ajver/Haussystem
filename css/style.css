@@ -148,10 +148,9 @@ main {
   padding: 0 15px;
   padding-top: 20px;
   font-size: 17rem;
-  color: black;
-  text-shadow: 0 0 10px #ddd;
+  color: #d6d6d6;
   overflow: auto;
-  background-image: url("../img/1.jpg");
+  background-color:#212121;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -231,9 +230,9 @@ p {
 }
 
 section {
-  background-color: rgba(237, 237, 237, 0.7);
+  background-color: rgba(84, 84, 84, 0.7);
   padding: 15px;
-  border: solid 1px #aaa;
+  border: solid 1px black;
   margin-bottom: 20px;
 }
 
@@ -243,7 +242,7 @@ section {
   width: 100%;
   min-height: 50px;
   max-height: 50px;
-  background-color: white;
+  background-color: #aaa;
   box-shadow: 0 4px 8px 0 #404040;
   margin: 20px 0;
   text-align: center;
