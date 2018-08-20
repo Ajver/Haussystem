@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext" rel="stylesheet">
   <link rel="shortcut icon" href="img/icon.png?1">
-  <link rel="stylesheet" href="css/style.css?7">
+  <link rel="stylesheet" href="css/style.css?8">
 </head>
 
 <body>
@@ -87,7 +87,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="js/jquery.scrollTo.min.js" type="text/javascript"></script>
-  <script src="js/main.js?6" type="text/javascript"></script>
+  <script src="js/main.js?8" type="text/javascript"></script>
 
 </body>
 

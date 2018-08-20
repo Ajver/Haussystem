@@ -1,15 +1,14 @@
-
-document.getElementById("about-us-btn").addEventListener("click", function() { 
+document.getElementById("about-us-btn").addEventListener("click", function () {
   scrollToSection(document.getElementById('about-us').offsetTop - 120);
 }, false);
-document.getElementById("offer-btn").addEventListener("click", function() { 
+document.getElementById("offer-btn").addEventListener("click", function () {
   scrollToSection(document.getElementById('offers').offsetTop - 120);
 }, false);
-document.getElementById("contact-btn").addEventListener("click", function() {
+document.getElementById("contact-btn").addEventListener("click", function () {
   scrollToSection(document.getElementById('page-footer').offsetTop - 120);
 }, false);
 
-var scrollToSection = function(yy) {
+var scrollToSection = function (yy) {
   $.scrollTo(yy, 500);
   var pageHeader = document.querySelector(".page-header");
   pageHeader.classList.remove("opened-nav");
