@@ -229,11 +229,18 @@ p {
   text-decoration: none;
 }
 
-section {
-  background-color: rgba(84, 84, 84, 0.7);
+.about-us {
+  background-color: rgba(255, 49, 18, 0.7);
   padding: 15px;
   border: solid 1px black;
   margin-bottom: 20px;
+}
+.offers{
+	background-color: rgba(18, 73, 255, 0.7);
+	padding: 15px;
+  border: solid 1px black;
+  margin-bottom: 20px;
+	
 }
 
 /*===========================================*/
@@ -242,15 +249,15 @@ section {
   width: 100%;
   min-height: 50px;
   max-height: 50px;
-  background-color: #aaa;
-  box-shadow: 0 4px 8px 0 #404040;
+  background-color: #092584;
+  box-shadow: 0 4px 8px 0 #3d3d3d;
   margin: 20px 0;
   text-align: center;
   padding: 15px 0;
   box-sizing: border-box;
   overflow: hidden;
   cursor: pointer;
-  border-bottom: 1px solid #ff6a01;
+  border-bottom: 1px solid #ff3112;
 
   transition: all .7s;
 }
