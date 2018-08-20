@@ -23,7 +23,7 @@ body {
 }
 
 .page-header {
-  background-color: #ffffff;
+  background-color: #3d3d3d;
   position: fixed;
   z-index: 100;
   display: flex;
@@ -57,7 +57,7 @@ body {
 .hamburger-block {
   width: 100%;
   height: 8px;
-  background-color: #505050;
+  background-color: #ff8b12;
   transition: 0.4s;
   border-radius: 5px;
 }
@@ -97,6 +97,7 @@ body {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+	background-color: #aaa;
 
   transition: height .5s;
 }
