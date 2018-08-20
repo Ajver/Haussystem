@@ -10,11 +10,12 @@
   <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext" rel="stylesheet">
   <link rel="shortcut icon" href="img/icon.png?1">
   <link rel="stylesheet" href="css/style.css?7">
+  <link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
   <header class="page-header">
-    <div class="logo"><img src="img/HausSystem-logo.png" alt="Haussystem"></div>
+    <div class="logo  animated bounceInDown"><img src="img/HausSystem-logo.png" alt="Haussystem"></div>
     <div class="hamburger">
       <div class="hamburger-block top"></div>
       <div class="hamburger-block middle"></div>
@@ -28,7 +29,7 @@
   </header>
   <main>
    
-   <section class="o-nas">
+   <section>
 			<header>
 				<h1>O nas</h1>
 			</header>
@@ -88,6 +89,10 @@
   <script src="js/main.js?6" type="text/javascript"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="js/jquery.scrollTo.min.js" type="text/javascript"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+	new WOW().init();
+	</script>
 
 </body>
 
