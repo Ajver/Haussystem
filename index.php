@@ -21,14 +21,14 @@
       <div class="hamburger-block bottom"></div>
     </div>
     <nav class="main-nav">
-      <a title="Poczytaj czym się zajmujemy" class="menu-btn about-us-btn">O nas</a>
-      <a title="Poznaj naszą ofertę" class="menu-btn offer-btn" >Oferta</a>
-      <a title="Skontaktuj się z nami" class="menu-btn contact-btn">Kontakt</a>
+      <a href="#" id="about-us-btn" title="Poczytaj czym się zajmujemy" class="menu-btn about-us-btn">O nas</a>
+      <a href="#" id="offer-btn" title="Poznaj naszą ofertę" class="menu-btn offer-btn" >Oferta</a>
+      <a href="#" id="contact-btn" title="Skontaktuj się z nami" class="menu-btn contact-btn">Kontakt</a>
     </nav>
   </header>
   <main>
    
-   <section class="o-nas">
+   <section id="about-us">
 			<header>
 				<h1>O nas</h1>
 			</header>
@@ -36,7 +36,7 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, beatae a! Ipsam explicabo deleniti harum, similique doloribus quam atque. A eligendi, harum laborum esse ipsum nihil adipisci vel sequi voluptate!</p>
    </section>
    
-   <section>
+   <section id="offers">
     <header>
   		<h1>Oferta</h1>
 		</header>
@@ -72,7 +72,7 @@
 	</section>
 
  </main>
-  <footer class="page-footer">
+  <footer class="page-footer" id="page-footer">
     <header>
       <h2>Skontaktuj się z nami:</h2>
     </header>
@@ -85,9 +85,9 @@
     </aside>
   </footer>
 
-  <script src="js/main.js?6" type="text/javascript"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="js/jquery.scrollTo.min.js" type="text/javascript"></script>
+  <script src="js/jquery.scrollTo.min.js" type="text/javascript"></script>
+  <script src="js/main.js?6" type="text/javascript"></script>
 
 </body>
 

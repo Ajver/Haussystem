@@ -1,7 +1,18 @@
-function delay(URL, time) {
-  setTimeout(function () {
-    window.location = URL
-  }, time);
+
+document.getElementById("about-us-btn").addEventListener("click", function() { 
+  scrollToSection(document.getElementById('about-us').offsetTop - 120);
+}, false);
+document.getElementById("offer-btn").addEventListener("click", function() { 
+  scrollToSection(document.getElementById('offers').offsetTop - 120);
+}, false);
+document.getElementById("contact-btn").addEventListener("click", function() {
+  scrollToSection(document.getElementById('page-footer').offsetTop - 120);
+}, false);
+
+var scrollToSection = function(yy) {
+  $.scrollTo(yy, 500);
+  var pageHeader = document.querySelector(".page-header");
+  pageHeader.classList.remove("opened-nav");
 }
 
 var ham = document.querySelector(".hamburger");
@@ -31,7 +42,7 @@ for (let i = 0; i < offer.length; i++) {
 
     window.setTimeout(function () {
       if (document.querySelector(".one-offer.opened-offer") !== null) {
-        var yy = document.querySelector(".one-offer.opened-offer").offsetTop - 110;
+        var yy = document.querySelector(".one-offer.opened-offer").offsetTop - 120;
 
         $.scrollTo(yy, 350);
       }
