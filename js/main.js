@@ -1,11 +1,11 @@
 document.getElementById("about-us-btn").addEventListener("click", function () {
-  scrollToSection(document.getElementById('about-us').offsetTop - 120);
+  scrollToSection(document.querySelector('.about-us').offsetTop - 120);
 }, false);
 document.getElementById("offer-btn").addEventListener("click", function () {
-  scrollToSection(document.getElementById('offers').offsetTop - 120);
+  scrollToSection(document.querySelector('.offers').offsetTop - 120);
 }, false);
 document.getElementById("contact-btn").addEventListener("click", function () {
-  scrollToSection(document.getElementById('page-footer').offsetTop - 120);
+  scrollToSection(document.querySelector('.page-footer').offsetTop - 120);
 }, false);
 
 var scrollToSection = function (yy) {
