@@ -110,8 +110,8 @@ body {
   color: #505050;
   font-size: 25rem;
   margin: 8px 0;
-	padding: 7px;
-	border: 2px solid transparent;
+  padding: 7px;
+  border: 2px solid transparent;
 
   transition: .3s;
 }
@@ -136,9 +136,11 @@ body {
 .menu-btn.contact-btn::before {
   background: url(../img/phone-call.png);
 }
-.menu-btn:hover{
-	border-color: #ff6a01;
+
+.menu-btn:hover {
+  border-color: #ff6a01;
 }
+
 main {
   margin-top: 100px;
   width: 100%;
@@ -176,7 +178,7 @@ p {
   padding: 15px;
   padding-bottom: 5px;
   font-size: 14rem;
-	border-top: 1px solid #ff6a01;
+  border-top: 1px solid #ff6a01;
 }
 
 .page-footer h2 {
@@ -227,11 +229,12 @@ p {
   color: #ff6a01;
   text-decoration: none;
 }
-section{
-	background-color: rgba(237, 237, 237,0.7);
-	padding: 15px;
-	border: solid 1px #aaa;
-	margin-bottom: 20px;
+
+section {
+  background-color: rgba(237, 237, 237, 0.7);
+  padding: 15px;
+  border: solid 1px #aaa;
+  margin-bottom: 20px;
 }
 
 /*===========================================*/
@@ -248,7 +251,7 @@ section{
   box-sizing: border-box;
   overflow: hidden;
   cursor: pointer;
-	border-bottom: 1px solid #ff6a01;
+  border-bottom: 1px solid #ff6a01;
 
   transition: all .7s;
 }
@@ -269,4 +272,3 @@ section{
 }
 
 /*===========================================*/
-
