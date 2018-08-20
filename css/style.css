@@ -57,13 +57,13 @@ body {
 .hamburger-block {
   width: 100%;
   height: 8px;
-  background-color: #ff6a01;
+  background-color: #e55039;
   transition: 0.4s;
   border-radius: 5px;
 }
 
 .page-header.opened-nav .hamburger-block {
-  background-color: #ff6a01;
+  background-color: #e55039;
 }
 
 .hamburger-block.middle {
@@ -91,7 +91,7 @@ body {
   top: 100px;
   width: 100%;
   height: 0;
-  border-bottom: 1px solid #ff6a01;
+  border-bottom: 1px solid #e55039;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -138,7 +138,7 @@ body {
 }
 
 .menu-btn:hover {
-  border-color: #ff6a01;
+  border-color: #e55039;
 }
 
 main {
@@ -150,7 +150,7 @@ main {
   font-size: 17rem;
   color: #d6d6d6;
   overflow: auto;
-  background-color:#212121;
+  background-color: #212121;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -177,7 +177,7 @@ p {
   padding: 15px;
   padding-bottom: 5px;
   font-size: 14rem;
-  border-top: 1px solid #ff6a01;
+  border-top: 1px solid #e55039;
 }
 
 .page-footer h2 {
@@ -195,7 +195,7 @@ p {
 }
 
 .page-footer .contact {
-  color: #ff6a01;
+  color: #e55039;
 }
 
 .page-footer .contact::before {
@@ -225,22 +225,23 @@ p {
 }
 
 .page-footer a {
-  color: #ff6a01;
+  color: #e55039;
   text-decoration: none;
 }
 
 .about-us {
-  background-color: rgba(255, 49, 18, 0.7);
+  background-color: #e55039;
   padding: 15px;
   border: solid 1px black;
   margin-bottom: 20px;
 }
-.offers{
-	background-color: rgba(18, 73, 255, 0.7);
-	padding: 15px;
+
+.offers {
+  background-color: #60a3bc;
+  padding: 15px;
   border: solid 1px black;
   margin-bottom: 20px;
-	
+
 }
 
 /*===========================================*/
@@ -249,7 +250,7 @@ p {
   width: 100%;
   min-height: 50px;
   max-height: 50px;
-  background-color: #092584;
+  background-color: #3c6382;
   box-shadow: 0 4px 8px 0 #3d3d3d;
   margin: 20px 0;
   text-align: center;
