@@ -9,12 +9,12 @@
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext" rel="stylesheet">
   <link rel="shortcut icon" href="img/icon.png?1">
-  <link rel="stylesheet" href="css/style.css?2">
+  <link rel="stylesheet" href="css/style.css?7">
 </head>
 
 <body>
   <header class="page-header">
-    <div class="logo"><img src="img/HausSystem-logo orange.png" alt="Haussystem"></div>
+    <div class="logo"><img src="img/HausSystem-logo.png" alt="Haussystem"></div>
     <div class="hamburger">
       <div class="hamburger-block top"></div>
       <div class="hamburger-block middle"></div>
