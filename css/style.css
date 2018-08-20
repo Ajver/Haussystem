@@ -228,3 +228,39 @@ p {
   text-decoration: none;
 }
 
+/*===========================================*/
+
+.one-offer {
+  width: 100%;
+  min-height: 50px;
+  max-height: 50px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 #404040;
+  margin: 20px 0;
+  text-align: center;
+  padding: 15px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  cursor: pointer;
+	border-bottom: 1px solid #ff8b12;
+
+  transition: all 1s;
+}
+
+.one-offer header {
+  margin-bottom: 20px;
+}
+
+.one-offer p {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.one-offer.opened-offer {
+  box-shadow: 0 8px 16px 0 #505050;
+  max-height: 1000px;
+  transition: all 2s;
+}
+
+/*===========================================*/
+
