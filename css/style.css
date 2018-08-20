@@ -20,6 +20,7 @@ body {
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 500;
   color: #ffffff;
+  background-color: #212121;
 }
 
 .page-header {
@@ -149,7 +150,6 @@ main {
   font-size: 17rem;
   color: #d6d6d6;
   overflow: auto;
-  background-color: #212121;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -177,6 +177,7 @@ p {
   padding-bottom: 5px;
   font-size: 14rem;
   border-top: 1px solid #e55039;
+  opacity: 0;
 }
 
 .page-footer h2 {

@@ -1,9 +1,14 @@
 
 window.addEventListener("scroll", function(e) {
   var offerTop = $(".offers").offset().top - ($(window).height() / 1.5);
+  var footerTop = $(".page-footer").offset().top - ($(window).height() / 1.5);
   
   if($(window).scrollTop() >= offerTop) {
     document.querySelector(".offers").classList.add("fadeIn");
+  }
+  
+  if($(window).scrollTop() >= footerTop) {
+    document.querySelector(".page-footer").classList.add("fadeInUp");
   }
 }, false);
 
