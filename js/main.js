@@ -1,5 +1,32 @@
 
+window.addEventListener("load", function(e) {
+  
+  window.setTimeout(function() {
+    var pageHeader = document.querySelector(".page-header");
+    var aboutUs = document.querySelector(".about-us");
+    var offers = document.querySelector(".offers");
+    var footer = document.querySelector(".page-footer");
 
+    window.setTimeout(function() {
+       pageHeader.classList.add("slideInLeft");
+    }, 100);
+
+    window.setTimeout(function() {
+       aboutUs.classList.add("slideInLeft");
+    }, 200);
+
+    window.setTimeout(function() {
+       offers.classList.add("slideInLeft");
+    }, 300);
+
+    window.setTimeout(function() {
+       footer.classList.add("slideInLeft");
+    }, 400);
+  }, 1000);
+  
+  
+  
+}, false);
 
 document.getElementById("about-us-btn").addEventListener("click", function () {
   scrollToSection(document.querySelector('.about-us').offsetTop - 120);
