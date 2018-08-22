@@ -20,7 +20,7 @@ body {
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 500;
   color: #ffffff;
-  background-color: white;
+  background-color: #212121;
 }
 
 .page-header {
@@ -254,44 +254,6 @@ p {
     0%   {transform: scale(0);}
     40%  {transform: scale(1.1);}
     60%  {transform: scale(1);}
-}
-.curtain-0{
-	height: 100vh;
-	width:0;
-	left:0;
-	position: fixed;
-	background-color: #e55039; 
-	z-index:-1;
-	
-	transition-duration: 1s;
-	transition-timing-function: ease;
-}
-.curtain-1{
-	height: 100vh;
-	width:0;
-	left:0;
-	position: fixed;
-	background-color: #60a3bc; 
-	z-index:-1;
-	
-	transition-duration: 1s;
-	transition-timing-function: ease;
-	transition-delay: 0.5s;
-}
-.curtain-2{
-	height: 100vh;
-	width:0;
-	left:0;
-	position: fixed;
-	background-color: #212121; 
-	z-index:-1;
-	
-	transition-duration: 1s;
-	transition-timing-function: ease;
-	transition-delay: 1s;
-}
-.loaded{
-	width:100vw;
 }
 
 /*===========================================*/
