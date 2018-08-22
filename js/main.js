@@ -1,6 +1,10 @@
 
 window.addEventListener("load", function(e) {
   
+  document.querySelector("curtain-0").classList.add("loaded");
+  document.querySelector("curtain-1").classList.add("loaded");
+  document.querySelector("curtain-2").classList.add("loaded");
+  
   window.setTimeout(function() {
     var pageHeader = document.querySelector(".page-header");
     var aboutUs = document.querySelector(".about-us");
@@ -22,9 +26,7 @@ window.addEventListener("load", function(e) {
     window.setTimeout(function() {
        footer.classList.add("slideInLeft");
     }, 400);
-  }, 1000);
-  
-  
+  }, 900);
   
 }, false);
 
