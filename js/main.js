@@ -1,5 +1,5 @@
 
-window.addEventListener("load", function(e) {
+window.addEventListener("load", function() {
   
   document.querySelector(".curtain-0").classList.add("loaded");
   document.querySelector(".curtain-1").classList.add("loaded");
