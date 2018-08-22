@@ -1,9 +1,9 @@
 
 window.addEventListener("load", function(e) {
   
-  document.querySelector("curtain-0").classList.add("loaded");
-  document.querySelector("curtain-1").classList.add("loaded");
-  document.querySelector("curtain-2").classList.add("loaded");
+  document.querySelector(".curtain-0").classList.add("loaded");
+  document.querySelector(".curtain-1").classList.add("loaded");
+  document.querySelector(".curtain-2").classList.add("loaded");
   
   window.setTimeout(function() {
     var pageHeader = document.querySelector(".page-header");
