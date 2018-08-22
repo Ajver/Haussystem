@@ -34,8 +34,6 @@ body {
   left: 0;
   width: 100vw;
   height: 100px;
-
-  transform: translateX(-100vw);
 }
 
 .logo {
@@ -179,8 +177,6 @@ p {
   padding-bottom: 5px;
   font-size: 14rem;
   border-top: 1px solid #e55039;
-
-  transform: translateX(-100vw);
 }
 
 .page-footer h2 {
@@ -237,8 +233,6 @@ p {
   padding: 15px;
   border: solid 1px black;
   margin-bottom: 20px;
-
-  transform: translateX(-100vw);
 }
 
 .offers {
@@ -246,8 +240,6 @@ p {
   padding: 15px;
   border: solid 1px black;
   margin-bottom: 20px;
-
-  transform: translateX(-100vw);
 }
 
 @keyframes popup {
@@ -268,10 +260,10 @@ p {
   left: 0;
   top: 0;
   position: fixed;
-  background-color: #e55039;
+	background-color: black;
   z-index: -1;
 
-  transition-duration: .3s;
+  transition-duration: .5s;
   transition-timing-function: ease;
 }
 
@@ -281,12 +273,12 @@ p {
   left: 0;
   top: 0;
   position: fixed;
-  background-color: #60a3bc;
+  background-color: #e55039;
   z-index: -1;
 
-  transition-duration: .3s;
+  transition-duration: .5s;
   transition-timing-function: ease;
-  transition-delay: .3s;
+  transition-delay: .2s;
 }
 
 .curtain-2 {
@@ -295,16 +287,26 @@ p {
   left: 0;
   top: 0;
   position: fixed;
-  background-color: #212121;
+	background-color: #60a3bc;
   z-index: -1;
 
-  transition-duration: .3s;
+  transition-duration: .5s;
   transition-timing-function: ease;
-  transition-delay: .6s;
+  transition-delay: .4s;
 }
 
 .loaded {
   width: 100vw !important;
+}
+.container{
+	background-color: #212121;
+	transform: translateX(-100vw);
+	transition-timing-function: ease;
+	transition-duration: .5s;
+	transition-delay: .6s;
+}
+.container.loaded{
+	transform: translateX(0);
 }
 
 /*===========================================*/
