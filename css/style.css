@@ -254,44 +254,36 @@ p {
   }
 }
 
-.curtain-0 {
-  height: 100vh;
-  width: 0;
-  left: 0;
-  top: 0;
-  position: fixed;
-	background-color: black;
-  z-index: -1;
-
-  transition-duration: .5s;
-  transition-timing-function: ease;
-}
-
-.curtain-1 {
-  height: 100vh;
-  width: 0;
-  left: 0;
-  top: 0;
-  position: fixed;
-  background-color: #e55039;
-  z-index: -1;
-
-  transition-duration: .5s;
-  transition-timing-function: ease;
-  transition-delay: .2s;
-}
-
+.curtain-0,
+.curtain-1,
 .curtain-2 {
   height: 100vh;
   width: 0;
   left: 0;
   top: 0;
   position: fixed;
-	background-color: #60a3bc;
   z-index: -1;
+}
 
-  transition-duration: .5s;
+.container,
+.curtain-0,
+.curtain-1,
+.curtain-2 {
   transition-timing-function: ease;
+  transition-duration: .5s;
+}
+
+.curtain-0 {
+  background-color: #000;
+}
+
+.curtain-1 {
+  background-color: #e55039;
+  transition-delay: .2s;
+}
+
+.curtain-2 {
+  background-color: #60a3bc;
   transition-delay: .4s;
 }
 
@@ -299,14 +291,12 @@ p {
   width: 100vw !important;
 }
 .container{
-	background-color: #212121;
-	transform: translateX(-100vw);
-	transition-timing-function: ease;
-	transition-duration: .5s;
-	transition-delay: .6s;
+  background-color: #212121;
+  transition-delay: .6s;
+  transform: translateX(-100vw);
 }
 .container.loaded{
-	transform: translateX(0);
+  transform: translateX(0);
 }
 
 /*===========================================*/
