@@ -19,7 +19,7 @@ body {
   /*  font-family: 'RollandinEmilie';*/
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 500;
-  color: #ffffff;
+  color: transparent;
   background-color: white;
 }
 
@@ -179,7 +179,7 @@ p {
   padding-bottom: 5px;
   font-size: 14rem;
   border-top: 1px solid #e55039;
-  
+
   transform: translateX(-100vw);
 }
 
@@ -237,7 +237,7 @@ p {
   padding: 15px;
   border: solid 1px black;
   margin-bottom: 20px;
-  
+
   transform: translateX(-100vw);
 }
 
@@ -246,52 +246,65 @@ p {
   padding: 15px;
   border: solid 1px black;
   margin-bottom: 20px;
-  
+
   transform: translateX(-100vw);
 }
 
 @keyframes popup {
-    0%   {transform: scale(0);}
-    40%  {transform: scale(1.1);}
-    60%  {transform: scale(1);}
+  0% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(1);
+  }
 }
-.curtain-0{
-	height: 100vh;
-	width:0;
-	left:0;
-	position: fixed;
-	background-color: #e55039; 
-	z-index:-1;
-	
-	transition-duration: 1s;
-	transition-timing-function: ease;
+
+.curtain-0 {
+  height: 100vh;
+  width: 0;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background-color: #e55039;
+  z-index: -1;
+
+  transition-duration: .3s;
+  transition-timing-function: ease;
 }
-.curtain-1{
-	height: 100vh;
-	width:0;
-	left:0;
-	position: fixed;
-	background-color: #60a3bc; 
-	z-index:-1;
-	
-	transition-duration: 1s;
-	transition-timing-function: ease;
-	transition-delay: 0.5s;
+
+.curtain-1 {
+  height: 100vh;
+  width: 0;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background-color: #60a3bc;
+  z-index: -1;
+
+  transition-duration: .3s;
+  transition-timing-function: ease;
+  transition-delay: .3s;
 }
-.curtain-2{
-	height: 100vh;
-	width:0;
-	left:0;
-	position: fixed;
-	background-color: #212121; 
-	z-index:-1;
-	
-	transition-duration: 1s;
-	transition-timing-function: ease;
-	transition-delay: 1s;
+
+.curtain-2 {
+  height: 100vh;
+  width: 0;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background-color: #212121;
+  z-index: -1;
+
+  transition-duration: .3s;
+  transition-timing-function: ease;
+  transition-delay: .6s;
 }
-.loaded{
-	width:100vw;
+
+.loaded {
+  width: 100vw !important;
 }
 
 /*===========================================*/
