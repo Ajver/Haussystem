@@ -291,6 +291,7 @@ p {
   width: 100vw !important;
 }
 .container{
+  max-width: 100%;
   background-color: #212121;
   transition-delay: .6s;
   transform: translateX(-100vw);
