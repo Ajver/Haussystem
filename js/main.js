@@ -42,7 +42,7 @@ var offer = document.getElementsByClassName("one-offer");
 
 for (let i = 0; i < offer.length; i++) {
   offer[i].addEventListener("click", function () {
-    if(window.innerWidth < 580) {
+    if (window.innerWidth < 580) {
       var otherOffers = document.getElementsByClassName("one-offer");
 
       var onlyEl = true;
@@ -65,20 +65,20 @@ for (let i = 0; i < offer.length; i++) {
           $.scrollTo(yy, 350);
         }
       }, onlyEl ? 100 : 700);
-    }else {
+    } else {
       showModalOffer(offer[i]);
     }
   }, false);
 }
 
-document.querySelector("body").addEventListener("keydown", function(e) {
-  if(e.keyCode === 27) {
+document.querySelector("body").addEventListener("keydown", function (e) {
+  if (e.keyCode === 27) {
     removeModal();
   }
-  
-//  var body = document.querySelector("body")
-//  
-//  if(body.classList.contains("modal-active")) {
-//    body.classList.remove("modal-active");
-//  }
+
+  //  var body = document.querySelector("body")
+  //  
+  //  if(body.classList.contains("modal-active")) {
+  //    body.classList.remove("modal-active");
+  //  }
 })

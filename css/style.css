@@ -127,7 +127,7 @@ body {
 }
 
 .menu-btn.about-us-btn::before {
-  background: url(../img/engineer.png);  
+  background: url(../img/engineer.png);
 }
 
 .menu-btn.offer-btn::before {
