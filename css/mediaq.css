@@ -74,6 +74,8 @@ body.modal-active::after {
     width: calc(50% - 15px);
     float: left;
     margin-right: 15px;
+    margin-bottom: 7.5px;
+    margin-top: 7.5px;
   }
 
   .one-offer.opened-offer {
