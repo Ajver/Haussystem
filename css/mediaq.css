@@ -1,4 +1,16 @@
 
+@media (min-width: 580px) {
+  .offers {
+    overflow: auto;
+    padding-right: 0;
+  }
+  .one-offer {
+    width: calc(50% - 15px);
+    float: left;
+    margin-right: 15px;
+  }
+}
+
 @media (min-width: 740px) {
   .hamburger {
     display: none;
