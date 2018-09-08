@@ -23,6 +23,17 @@ body {
   background-color: white;
 }
 
+.test-aside {
+  width: 200px;
+  height: 200px;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  position: fixed;
+  display: block;
+  z-index: 9999;
+}
+
 .page-header {
   background-color: #aaa;
   position: fixed;
