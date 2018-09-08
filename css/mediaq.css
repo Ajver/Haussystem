@@ -4,15 +4,57 @@
     display: none;
   }
   .main-nav {
-    height: 100%;
+    height: 200px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     width: auto;
     position: absolute;
-    top: 0;
-    right: 30px;
+    top: 100vh;
+    right: 10px;
     border: none;
   }
+	.page-header{
+		width: 100%;
+		height: 100vh;
+		position: static;
+		background-image: url(../img/adult-architect-architectural-design-1260309.jpg);
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	.logo{
+		position: absolute;
+		top: calc(50vh - 150px);
+		left: calc(50vw - 350px);
+		max-width:700px;
+		width:700px;
+	}
+	.page-footer{
+		display: flex;
+		justify-content: center;
+		padding-bottom: 60px;
+		font-size: 20rem;
+	}
+	.page-footer .google-map {
+		width: 400px;
+		height: 200px;
+	}
+	.contacts{
+		margin-right: 10%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.map{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.page-author{
+		position: absolute;
+		bottom:5px;
+		font-size:14rem;
+	}
 }
 
