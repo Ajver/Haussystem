@@ -42,28 +42,43 @@ var offer = document.getElementsByClassName("one-offer");
 
 for (let i = 0; i < offer.length; i++) {
   offer[i].addEventListener("click", function () {
-    var otherOffers = document.getElementsByClassName("one-offer");
+    if (window.innerWidth < 580) {
+      var otherOffers = document.getElementsByClassName("one-offer");
 
-    var onlyEl = true;
+      var onlyEl = true;
 
-    for (var j = 0; j < otherOffers.length; j++) {
-      if (j !== i) {
-        if (otherOffers[j].classList.contains("opened-offer")) {
-          otherOffers[j].classList.remove("opened-offer");
-          onlyEl = false;
+      for (var j = 0; j < otherOffers.length; j++) {
+        if (j !== i) {
+          if (otherOffers[j].classList.contains("opened-offer")) {
+            otherOffers[j].classList.remove("opened-offer");
+            onlyEl = false;
+          }
         }
       }
+
+      this.classList.toggle("opened-offer");
+
+      window.setTimeout(function () {
+        if (document.querySelector(".one-offer.opened-offer") !== null) {
+          var yy = document.querySelector(".one-offer.opened-offer").offsetTop - 120;
+
+          $.scrollTo(yy, 350);
+        }
+      }, onlyEl ? 100 : 700);
+    } else {
+      showModalOffer(offer[i]);
     }
-
-    this.classList.toggle("opened-offer");
-
-    window.setTimeout(function () {
-      if (document.querySelector(".one-offer.opened-offer") !== null) {
-        var yy = document.querySelector(".one-offer.opened-offer").offsetTop - 120;
-
-        $.scrollTo(yy, 350);
-      }
-    }, onlyEl ? 100 : 700);
-
   }, false);
 }
+
+document.querySelector("body").addEventListener("keydown", function (e) {
+  if (e.keyCode === 27) {
+    removeModal();
+  }
+
+  //  var body = document.querySelector("body")
+  //  
+  //  if(body.classList.contains("modal-active")) {
+  //    body.classList.remove("modal-active");
+  //  }
+})

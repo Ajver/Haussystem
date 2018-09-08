@@ -1,8 +1,93 @@
+body::after {
+  content: "";
+  position: fixed;
+  z-index: -100;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  opacity: 0;
+
+  transition: .3s;
+}
+
+body.modal-active::after {
+  display: block;
+  z-index: 400;
+  opacity: .5;
+}
+
+.modal {
+  width: 50vw;
+  max-width: 600px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  background-color: #eee;
+  transform: translate(-50%, -50%) scale(0);
+  color: #303030;
+  font-size: 20rem;
+  text-align: center;
+  padding: 15px;
+
+  transition: .3s;
+}
+
+.modal header {
+  font-size: 28rem;
+  margin: 20rem 0;
+  letter-spacing: 2px;
+  color: #e55039;
+}
+
+.modal.active {
+  z-index: 500;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-close-btn {
+  width: 100px;
+  height: 30px;
+  color: #3c6382;
+  text-align: center;
+  margin-left: auto;
+  cursor: pointer;
+  border: 2px solid transparent;
+
+  transition: border .5s;
+}
+
+.modal-close-btn:hover {
+  border: 2px solid #3c6382;
+}
+
+@media (min-width: 580px) {
+  .offers {
+    overflow: auto;
+    padding-right: 0;
+  }
+
+  .one-offer {
+    width: calc(50% - 15px);
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 7.5px;
+    margin-top: 7.5px;
+  }
+
+  .one-offer.opened-offer {
+    max-height: 50px;
+  }
+}
 
 @media (min-width: 740px) {
   .hamburger {
     display: none;
   }
+
   .main-nav {
     height: 200px;
     display: flex;
@@ -57,4 +142,3 @@
 		font-size:14rem;
 	}
 }
-

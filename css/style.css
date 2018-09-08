@@ -127,7 +127,7 @@ body {
 }
 
 .menu-btn.about-us-btn::before {
-  background: url(../img/engineer.png);  
+  background: url(../img/engineer.png);
 }
 
 .menu-btn.offer-btn::before {
@@ -336,7 +336,11 @@ body.loaded .page-header {
   cursor: pointer;
   border-bottom: 1px solid #ff3112;
 
-  transition: all .7s;
+  transition: max-height .7s, box-shadow .2s, transform .2s;
+}
+
+.one-offer:hover {
+  box-shadow: 0 8px 16px 0 #3d3d3d;
 }
 
 .one-offer header {
@@ -351,7 +355,7 @@ body.loaded .page-header {
 .one-offer.opened-offer {
   box-shadow: 0 8px 16px 0 #505050;
   max-height: 1000px;
-  transition: all 1s;
+  transition: max-height 1s;
 }
 
 /*===========================================*/
