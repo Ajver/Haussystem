@@ -1,11 +1,7 @@
+window.addEventListener("load", function () {
 
-window.addEventListener("load", function() {
-  
-  document.querySelector(".curtain-0").classList.add("loaded");
-  document.querySelector(".curtain-1").classList.add("loaded");
-  document.querySelector(".curtain-2").classList.add("loaded");
-  document.querySelector(".container").classList.add("loaded");
-  
+  document.querySelector("body").classList.add("loaded");
+
 }, false);
 
 document.getElementById("about-us-btn").addEventListener("click", function () {
@@ -22,10 +18,10 @@ var scrollToSection = function (yy) {
   $.scrollTo(yy, 500);
   var pageHeader = document.querySelector(".page-header");
   pageHeader.classList.remove("opened-nav");
-  
+
   var menuBtns = document.getElementsByClassName("menu-btn");
-  
-  for(var i=0; i<menuBtns.length; i++) {
+
+  for (var i = 0; i < menuBtns.length; i++) {
     menuBtns.item(i).classList.remove("slideInDown");
   }
 }
@@ -34,10 +30,10 @@ var ham = document.querySelector(".hamburger");
 ham.addEventListener("click", function () {
   var pageHeader = document.querySelector(".page-header");
   pageHeader.classList.toggle("opened-nav");
-  
+
   var menuBtns = document.getElementsByClassName("menu-btn");
-  
-  for(var i=0; i<menuBtns.length; i++) {
+
+  for (var i = 0; i < menuBtns.length; i++) {
     menuBtns.item(i).classList.toggle("slideInDown");
   }
 }, false);
