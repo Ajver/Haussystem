@@ -135,7 +135,7 @@ body {
 }
 
 .menu-btn.contact-btn::before {
-  background: url(../img/phone-call.png);
+  background: url(../img/contact.png);
 }
 
 .menu-btn:hover {
