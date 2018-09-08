@@ -10,7 +10,11 @@
     justify-content: flex-end;
     width: auto;
     position: absolute;
+<<<<<<< HEAD
     top: 100vh;
+=======
+    top: 0;
+>>>>>>> b0c4400b2ad1b8a34af4ae907cf4d09784ac13b3
     right: 10px;
     border: none;
   }
