@@ -18,7 +18,7 @@ html {
 body {
   /*  font-family: 'RollandinEmilie';*/
   font-family: 'IBM Plex Mono', monospace;
-  font-weight: 400;
+  font-weight: 500;
   color: transparent;
   background-color: white;
 }
@@ -152,14 +152,13 @@ main {
   padding-top: 120px;
   width: 100%;
   box-sizing: border-box;
-  font-size: 25rem;
+  font-size: 17rem;
   color: #d6d6d6;
   overflow: auto;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   overflow: auto;
-	line-height: 50px;
 }
 
 h1 {
@@ -182,7 +181,6 @@ p {
   padding: 15px;
   padding-bottom: 5px;
   font-size: 14rem;
-  border-top: 1px solid #e55039;
   color: #d6d6d6;
 }
 
@@ -244,7 +242,6 @@ p {
 .offers {
   background-color: #60a3bc;
   padding: 40px;
-  margin-bottom: 20px;
 }
 
 @keyframes popup {
@@ -322,7 +319,7 @@ body.loaded .page-header {
 .one-offer {
   width: 100%;
   min-height: 50px;
-  max-height: 80px;
+  max-height: 50px;
   background-color: #3c6382;
   box-shadow: 0 4px 8px 0 #3d3d3d;
   margin: 20px 0;

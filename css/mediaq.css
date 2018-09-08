@@ -1,3 +1,6 @@
+body{
+	font-weight: 400;
+}
 body::after {
   content: "";
   position: fixed;
@@ -71,11 +74,14 @@ body.modal-active::after {
   }
 
   .one-offer {
-    width: calc(50% - 100px);
+    width: calc(50% - 300px);
     float: left;
-    margin-right: 50px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+		max-height: 80px;
+		height:80px;
+    margin-right: 150px;
+		margin-left: 150px;
+    margin-bottom: 25px;
+    margin-top: 25px;
   }
 
   .one-offer.opened-offer {
@@ -141,4 +147,7 @@ body.modal-active::after {
 		bottom:5px;
 		font-size:14rem;
 	}
-}
+	main{
+		font-size:25rem;
+		line-height: 50px;
+	}
