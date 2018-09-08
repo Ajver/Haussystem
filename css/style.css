@@ -127,7 +127,7 @@ body {
 }
 
 .menu-btn.about-us-btn::before {
-  background: url(../img/engineer.png);
+  background: url(../img/engineer.png);  
 }
 
 .menu-btn.offer-btn::before {
@@ -136,6 +136,12 @@ body {
 
 .menu-btn.contact-btn::before {
   background: url(../img/contact.png);
+}
+
+.menu-btn.about-us-btn::before,
+.menu-btn.offer-btn::before,
+.menu-btn.contact-btn::before {
+  background-size: cover;
 }
 
 .menu-btn:hover {
