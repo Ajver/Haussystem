@@ -1,7 +1,18 @@
 
-@media (min-width: 720px) {
+@media (min-width: 740px) {
   .hamburger {
     display: none;
+  }
+  .main-nav {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    border: none;
   }
 }
 
