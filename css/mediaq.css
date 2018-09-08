@@ -149,5 +149,6 @@ body.modal-active::after {
 	main{
 		font-size:25rem;
 		line-height: 50px;
+		padding-top: 0;
 	}
 }
