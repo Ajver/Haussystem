@@ -1,6 +1,3 @@
-body{
-	font-weight: 400;
-}
 body::after {
   content: "";
   position: fixed;
@@ -67,7 +64,7 @@ body.modal-active::after {
   border: 2px solid #3c6382;
 }
 
-@media (min-width: 580px) {
+@media (min-width: 740px) {
   .offers {
     overflow: auto;
     padding-right: 0;
@@ -75,11 +72,12 @@ body.modal-active::after {
 
   .one-offer {
     width: calc(50% - 300px);
+		min-width: 300px;
     float: left;
 		max-height: 80px;
 		height:80px;
-    margin-right: 150px;
-		margin-left: 150px;
+    margin-right: 100px;
+		margin-left: 100px;
     margin-bottom: 25px;
     margin-top: 25px;
   }
@@ -87,9 +85,10 @@ body.modal-active::after {
   .one-offer.opened-offer {
     max-height: 50px;
   }
-}
 
-@media (min-width: 740px) {
+	body{
+	font-weight: 400;
+}
   .hamburger {
     display: none;
   }
@@ -151,3 +150,4 @@ body.modal-active::after {
 		font-size:25rem;
 		line-height: 50px;
 	}
+}
