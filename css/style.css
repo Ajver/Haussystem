@@ -23,17 +23,6 @@ body {
   background-color: white;
 }
 
-.test-aside {
-  width: 200px;
-  height: 200px;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  position: fixed;
-  display: block;
-  z-index: 9999;
-}
-
 .page-header {
   background-color: #aaa;
   position: fixed;
@@ -188,7 +177,7 @@ p {
   padding-bottom: 5px;
   font-size: 14rem;
   border-top: 1px solid #e55039;
-  color:#d6d6d6;
+  color: #d6d6d6;
 }
 
 .page-footer h2 {
@@ -258,9 +247,11 @@ p {
   0% {
     transform: scale(0);
   }
+
   40% {
     transform: scale(1.1);
   }
+
   60% {
     transform: scale(1);
   }
@@ -280,7 +271,8 @@ p {
 .container,
 .curtain-0,
 .curtain-1,
-.curtain-2 {
+.curtain-2,
+.page-header {
   transition-timing-function: ease;
   transition-duration: .5s;
 }
@@ -299,16 +291,25 @@ p {
   transition-delay: .4s;
 }
 
-.loaded {
+body.loaded .curtain-0,
+body.loaded .curtain-1,
+body.loaded .curtain-2 {
   width: 100vw !important;
 }
-.container{
+
+.container,
+.page-header {
+  transform: translateX(-100vw);
+  transition-delay: .6s;
+}
+
+.container {
   max-width: 100%;
   background-color: #212121;
-  transition-delay: .6s;
-  transform: translateX(-100vw);
 }
-.container.loaded{
+
+body.loaded .container,
+body.loaded .page-header {
   transform: translateX(0);
 }
 
