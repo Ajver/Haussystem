@@ -62,7 +62,9 @@ body {
   transition: 0.4s;
   border-radius: 5px;
 }
-
+.arrow{
+	display:none;
+}
 .page-header.opened-nav .hamburger-block {
   background-color: #e55039;
 }
@@ -200,7 +202,7 @@ p {
 }
 
 .page-footer .contact {
-  color: #e55039;
+  color: #cd6133;
 }
 
 .page-footer .contact::before {
@@ -230,32 +232,18 @@ p {
 }
 
 .page-footer a {
-  color: #e55039;
+  color: #cd6133;
   text-decoration: none;
 }
 
 .about-us {
-  background-color: #e55039;
+  background-color: #cd6133;
   padding: 40px;
 }
 
 .offers {
-  background-color: #60a3bc;
+  background-color: #84817a;
   padding: 40px;
-}
-
-@keyframes popup {
-  0% {
-    transform: scale(0);
-  }
-
-  40% {
-    transform: scale(1.1);
-  }
-
-  60% {
-    transform: scale(1);
-  }
 }
 
 .curtain-0,
@@ -283,12 +271,12 @@ p {
 }
 
 .curtain-1 {
-  background-color: #e55039;
+  background-color: #cd6133;
   transition-delay: .2s;
 }
 
 .curtain-2 {
-  background-color: #60a3bc;
+  background-color: #84817a;
   transition-delay: .4s;
 }
 
@@ -320,7 +308,7 @@ body.loaded .page-header {
   width: 100%;
   min-height: 50px;
   max-height: 50px;
-  background-color: #3c6382;
+  background-color: #514f4b;
   box-shadow: 0 4px 8px 0 #3d3d3d;
   margin: 20px 0;
   text-align: center;
@@ -328,7 +316,7 @@ body.loaded .page-header {
   box-sizing: border-box;
   overflow: hidden;
   cursor: pointer;
-  border-bottom: 1px solid #ff3112;
+  border-bottom: 1px solid #cd6133;
 	border-radius: 10px;
 
   transition: max-height .7s, box-shadow .2s, transform .2s;

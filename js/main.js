@@ -42,7 +42,7 @@ var offer = document.getElementsByClassName("one-offer");
 
 for (let i = 0; i < offer.length; i++) {
   offer[i].addEventListener("click", function () {
-    if (window.innerWidth < 580) {
+    if (window.innerWidth < 740) {
       var otherOffers = document.getElementsByClassName("one-offer");
 
       var onlyEl = true;
@@ -82,3 +82,9 @@ document.querySelector("body").addEventListener("keydown", function (e) {
   //    body.classList.remove("modal-active");
   //  }
 })
+$(".arrow").click(function()
+   {
+     	$.scrollTo(".about-us",500);
+   });
+
+

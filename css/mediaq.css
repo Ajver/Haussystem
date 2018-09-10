@@ -28,7 +28,7 @@ body.modal-active::after {
   background-color: #eee;
   transform: translate(-50%, -50%) scale(0);
   color: #303030;
-  font-size: 20rem;
+  font-size: 25rem;
   text-align: center;
   padding: 15px;
 	border-radius: 10px;
@@ -37,10 +37,10 @@ body.modal-active::after {
 }
 
 .modal header {
-  font-size: 28rem;
+  font-size: 30rem;
   margin: 20rem 0;
   letter-spacing: 2px;
-  color: #e55039;
+  color: #cd6133;
 }
 
 .modal.active {
@@ -57,6 +57,7 @@ body.modal-active::after {
   margin-left: auto;
   cursor: pointer;
   border: 2px solid transparent;
+	font-size: 20rem;
 
   transition: border .5s;
 }
@@ -66,15 +67,23 @@ body.modal-active::after {
 }
 
 @media (min-width: 740px) {
+	.about-us{
+		padding: 20px 300px;
+	}
   .offers {
     overflow: auto;
-    padding-right: 0;
+		padding: 20px 300px;
   }
+	.offers-blocks{
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
 
   .one-offer {
     width: calc(50% - 300px);
 		min-width: 300px;
-    float: left;
 		max-height: 80px;
 		height:80px;
     margin-right: 100px;
@@ -126,6 +135,7 @@ body.modal-active::after {
 		justify-content: center;
 		padding-bottom: 60px;
 		font-size: 20rem;
+		padding-top: 40px;
 	}
 	.page-footer .google-map {
 		width: 400px;
@@ -151,5 +161,26 @@ body.modal-active::after {
 		font-size:25rem;
 		line-height: 50px;
 		padding-top: 0;
+	}
+	.arrow{
+		display: block;
+		position:absolute;
+		top:85%;
+		left:50%;
+		transform: translate(-50%,-50%) rotate(-90deg);
+		border-radius: 90px;
+	}
+	.arrow :hover{
+		animation-name: jump;
+		animation-duration: .8s;
+		animation-iteration-count: infinite;
+	}
+}
+@keyframes jump {
+	40%{
+		transform: translate(0,0);
+	}
+	80%{
+		transform: translate(10px,0);
 	}
 }
