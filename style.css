@@ -32,7 +32,7 @@ body {
   align-items: center;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100px;
 }
 
@@ -58,13 +58,15 @@ body {
 .hamburger-block {
   width: 100%;
   height: 8px;
-  background-color: #e55039;
+  background-color: #cd6133;
   transition: 0.4s;
   border-radius: 5px;
 }
-
+.arrow{
+	display:none;
+}
 .page-header.opened-nav .hamburger-block {
-  background-color: #e55039;
+  background-color: #cd6133;
 }
 
 .hamburger-block.middle {
@@ -72,7 +74,7 @@ body {
 }
 
 .page-header.opened-nav .hamburger-block.top {
-  transform: translateY(16px) rotate(45deg);
+  transform: translate(0, 16px) rotate(45deg);
 }
 
 .page-header.opened-nav .hamburger-block.middle {
@@ -83,7 +85,7 @@ body {
 }
 
 .page-header.opened-nav .hamburger-block.bottom {
-  transform: translateY(-16px) rotate(-45deg);
+  transform: translate(0, -16px) rotate(-45deg);
 }
 
 .main-nav {
@@ -92,7 +94,7 @@ body {
   top: 100px;
   width: 100%;
   height: 0;
-  border-bottom: 1px solid #e55039;
+  border-bottom: 1px solid #514f4b;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -135,7 +137,13 @@ body {
 }
 
 .menu-btn.contact-btn::before {
-  background: url(../img/phone-call.png);
+  background: url(../img/contact.png);
+}
+
+.menu-btn.about-us-btn::before,
+.menu-btn.offer-btn::before,
+.menu-btn.contact-btn::before {
+  background-size: cover;
 }
 
 .menu-btn:hover {
@@ -143,8 +151,7 @@ body {
 }
 
 main {
-  padding: 0 15px;
-  padding-top: 120px;
+  padding-top: 100px;
   width: 100%;
   box-sizing: border-box;
   font-size: 17rem;
@@ -170,20 +177,20 @@ p {
 }
 
 .page-footer {
-  background-color: #000000;
+  background-color: #151515;
   overflow: auto;
   box-sizing: border-box;
   padding: 15px;
   padding-bottom: 5px;
   font-size: 14rem;
-  border-top: 1px solid #e55039;
-  color:#d6d6d6;
+  color: #d6d6d6;
 }
 
 .page-footer h2 {
   font-size: 20rem;
   margin: 10px 0;
   margin-top: 30px;
+	color:#d6d6d6;
 }
 
 .page-footer h2:first-child {
@@ -195,7 +202,8 @@ p {
 }
 
 .page-footer .contact {
-  color: #e55039;
+  color: #cd6133;  
+    
 }
 
 .page-footer .contact::before {
@@ -215,6 +223,9 @@ p {
   background-image: url(../img/mail.png);
 }
 
+.page-footer .map {
+    margin: 30px 0 ;
+}
 .page-footer .google-map {
   width: 100%;
   height: 50vw;
@@ -225,34 +236,18 @@ p {
 }
 
 .page-footer a {
-  color: #e55039;
+  color: #cd6133;
   text-decoration: none;
 }
 
 .about-us {
-  background-color: #e55039;
-  padding: 15px;
-  border: solid 1px black;
-  margin-bottom: 20px;
+  background-color: #cd6133;
+  padding: 40px;
 }
 
 .offers {
-  background-color: #60a3bc;
-  padding: 15px;
-  border: solid 1px black;
-  margin-bottom: 20px;
-}
-
-@keyframes popup {
-  0% {
-    transform: scale(0);
-  }
-  40% {
-    transform: scale(1.1);
-  }
-  60% {
-    transform: scale(1);
-  }
+  background-color: #84817a;
+  padding: 40px;
 }
 
 .curtain-0,
@@ -269,7 +264,8 @@ p {
 .container,
 .curtain-0,
 .curtain-1,
-.curtain-2 {
+.curtain-2,
+.page-header {
   transition-timing-function: ease;
   transition-duration: .5s;
 }
@@ -279,25 +275,34 @@ p {
 }
 
 .curtain-1 {
-  background-color: #e55039;
+  background-color: #cd6133;
   transition-delay: .2s;
 }
 
 .curtain-2 {
-  background-color: #60a3bc;
+  background-color: #84817a;
   transition-delay: .4s;
 }
 
-.loaded {
+body.loaded .curtain-0,
+body.loaded .curtain-1,
+body.loaded .curtain-2 {
   width: 100vw !important;
 }
-.container{
+
+.container,
+.page-header {
+  transform: translateX(-100vw);
+  transition-delay: .6s;
+}
+
+.container {
   max-width: 100%;
   background-color: #212121;
-  transition-delay: .6s;
-  transform: translateX(-100vw);
 }
-.container.loaded{
+
+body.loaded .container,
+body.loaded .page-header {
   transform: translateX(0);
 }
 
@@ -307,7 +312,7 @@ p {
   width: 100%;
   min-height: 50px;
   max-height: 50px;
-  background-color: #3c6382;
+  background-color: #514f4b;
   box-shadow: 0 4px 8px 0 #3d3d3d;
   margin: 20px 0;
   text-align: center;
@@ -315,9 +320,14 @@ p {
   box-sizing: border-box;
   overflow: hidden;
   cursor: pointer;
-  border-bottom: 1px solid #ff3112;
+  border-bottom: 1px solid #cd6133;
+	border-radius: 10px;
 
-  transition: all .7s;
+  transition: max-height .7s, box-shadow .2s, transform .2s;
+}
+
+.one-offer:hover {
+  box-shadow: 0 8px 16px 0 #3d3d3d;
 }
 
 .one-offer header {
@@ -332,7 +342,7 @@ p {
 .one-offer.opened-offer {
   box-shadow: 0 8px 16px 0 #505050;
   max-height: 1000px;
-  transition: all 1s;
+  transition: max-height 1s;
 }
 
 /*===========================================*/
