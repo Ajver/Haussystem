@@ -176,7 +176,7 @@ body.modal-active::after {
 		animation-iteration-count: infinite;
 	}
 	.about-us{
-		padding:20px 0;
+		padding:20px;
 	}
 }
 @keyframes jump {
