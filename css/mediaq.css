@@ -178,6 +178,9 @@ body.modal-active::after {
 	.about-us{
 		padding: 20px 100px;
 	}
+	.offers{
+		padding: 20px 100px;
+	}
 }
 @keyframes jump {
 	40%{
