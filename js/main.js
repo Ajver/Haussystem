@@ -5,17 +5,18 @@ window.addEventListener("load", function () {
 }, false);
 
 document.getElementById("about-us-btn").addEventListener("click", function () {
-  scrollToSection(document.querySelector('.about-us'));
+  scrollToSection('.about-us');
 }, false);
 document.getElementById("offer-btn").addEventListener("click", function () {
-  scrollToSection(document.querySelector('.offers'));
+  scrollToSection('.offers');
 }, false);
 document.getElementById("contact-btn").addEventListener("click", function () {
-  scrollToSection(document.querySelector('.page-footer'));
+  scrollToSection('.offers');
 }, false);
 
 var scrollToSection = function (yy) {
-  $.scrollTo(yy, 500);
+  $.scrollTo($(yy).offset().top - 80, 500);
+  console.log($(yy).offset().top);
   var pageHeader = document.querySelector(".page-header");
   pageHeader.classList.remove("opened-nav");
 

@@ -104,7 +104,7 @@ body {
   transition: height .5s;
 }
 
-.page-header.opened-nav .main-nav {
+.page-header.opened-nav + .main-nav {
   height: 250px;
 }
 
