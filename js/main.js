@@ -5,13 +5,13 @@ window.addEventListener("load", function () {
 }, false);
 
 document.getElementById("about-us-btn").addEventListener("click", function () {
-  scrollToSection(document.querySelector('.about-us').offsetTop - 120);
+  scrollToSection(document.querySelector('.about-us'));
 }, false);
 document.getElementById("offer-btn").addEventListener("click", function () {
-  scrollToSection(document.querySelector('.offers').offsetTop - 120);
+  scrollToSection(document.querySelector('.offers'));
 }, false);
 document.getElementById("contact-btn").addEventListener("click", function () {
-  scrollToSection(document.querySelector('.page-footer').offsetTop - 120);
+  scrollToSection(document.querySelector('.page-footer'));
 }, false);
 
 var scrollToSection = function (yy) {
@@ -84,7 +84,7 @@ document.querySelector("body").addEventListener("keydown", function (e) {
 })
 $(".arrow").click(function()
    {
-     	$.scrollTo(".about-us",500);
+     	$.scrollTo(".main-nav",500);
    });
 
 
