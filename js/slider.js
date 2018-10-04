@@ -13,7 +13,7 @@ $(document).ready(function() {
             $('.main-nav').removeClass('sticky');
         }
 
-        //document.querySelector(".page-header").style.top = -ScrollY/5 + "px";
+        document.querySelector(".page-header .slider").style.top = -ScrollY/5 + "px";
     });
 });
 
