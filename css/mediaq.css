@@ -143,8 +143,6 @@ body.modal-active::after {
     position: fixed;
     margin-bottom: 80px;
     z-index: 0;
-
-    transition: background-image 3s ease 1s;
   }
 
   .page-header .slider {
