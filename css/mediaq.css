@@ -230,6 +230,13 @@ body.modal-active::after {
   }
 }
 
+@media (min-width: 1200px) {
+  .wrap {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+
 @keyframes jump {
   40% {
     transform: translate(0, 0);
