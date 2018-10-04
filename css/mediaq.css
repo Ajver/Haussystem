@@ -145,15 +145,38 @@ body.modal-active::after {
     z-index: 0;
   }
 
-  .page-header .slider {
+  .page-header .slider,
+  .page-header .slider-img {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../img/adult-architect-architectural-design-1260309.jpg);
+  }
+  
+  .page-header .slider-img {
     background-position: center;
     background-size: cover;
+    opacity: 0;
+    
+    transition: opacity 2s;
+  }
+  
+  .page-header .slider-img.slider-img-1 {
+    background-image: url("../img/1.jpg");
+    opacity: 1;
+  }
+  .page-header .slider-img.slider-img-2 {
+    background-image: url("../img/2.jpg");
+  }
+  .page-header .slider-img.slider-img-3 {
+    background-image: url("../img/3.jpg");
+  }
+  .page-header .slider-img.slider-img-4 {
+    background-image: url("../img/4.jpg");
+  }
+  .page-header .slider-img.slider-img-5 {
+    background-image: url("../img/5.jpg");
   }
 
   .main-nav.sticky {
