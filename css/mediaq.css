@@ -160,8 +160,9 @@ body.modal-active::after {
 
   .logo {
     position: absolute;
-    top: calc(50vh - 150px);
-    left: calc(50vw - 350px);
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     max-width: 700px;
     width: 700px;
   }
