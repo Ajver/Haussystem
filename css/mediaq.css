@@ -118,11 +118,13 @@ body.modal-active::after {
     border: none;
     box-sizing: border-box;
     z-index: 100;
+    border-bottom: 1px solid #e55039;
     /*    background-color: transparent;*/
+    box-shadow: 0 0 0 0 transparent !important;
 
     transform: translateX(-100vw);
 
-    transition: transform .5s ease .6s;
+    transition: transform .5s ease .6s, box-shadow .3s;
   }
 
   body.loaded .main-nav {
@@ -149,6 +151,10 @@ body.modal-active::after {
     z-index: 0;
   }
 
+  .main-nav.sticky { 
+    box-shadow: 0 0 16px 8px #666 !important; 
+  }
+  
   .sticky {
     position: fixed;
     top: 0;
