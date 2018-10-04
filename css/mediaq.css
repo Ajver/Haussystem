@@ -73,14 +73,13 @@ body.modal-active::after {
 
   .offers {
     overflow: auto;
-    padding: 20px 300px;
   }
 
   .offers-blocks {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   .one-offer {
@@ -212,6 +211,7 @@ body.modal-active::after {
     left: 50%;
     transform: translate(-50%, -50%) rotate(-90deg);
     border-radius: 90px;
+    cursor: pointer;
   }
 
   .arrow :hover {
