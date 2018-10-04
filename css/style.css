@@ -208,6 +208,11 @@ p {
   margin: 5px 0;
 }
 
+.page-footer .contacts,
+.page-footer .map {
+  margin-bottom: 20px;
+}
+
 .page-footer .contact {
   color: #cd6133;
 }
