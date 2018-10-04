@@ -16,3 +16,28 @@ $(document).ready(function() {
         //document.querySelector(".page-header").style.top = -ScrollY/5 + "px";
     });
 });
+
+var slideIndex = 0;
+
+var nextSlide = function() {  
+  var slides = document.getElementsByClassName("slider-img");
+  var curSlide = slides[slideIndex];
+  
+  // Removing class from last slide 
+  if(slideIndex == 0) { 
+    slides[slides.length-1].classList.remove("active");
+  }else {
+    slides[slideIndex-1].classList.remove("active");
+  }
+  
+  // Setting class for active slide
+  curSlide.classList.add("active");
+  
+  // Next slide index
+  slideIndex = (slideIndex+1) % slides.length;
+  
+  
+  window.setTimeout(nextSlide, 5000);
+}
+
+nextSlide();
