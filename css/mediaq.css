@@ -108,14 +108,12 @@ body.modal-active::after {
 
   .main-nav {
     height: 80px;
-    display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     position: absolute;
     top: 100vh;
     left: 0;
     padding-right: 10px;
-    border: none;
     box-sizing: border-box;
     z-index: 100;
     border-bottom: 1px solid #e55039;
@@ -221,10 +219,7 @@ body.modal-active::after {
     animation-iteration-count: infinite;
   }
 
-  .about-us {
-    padding: 20px 100px;
-  }
-
+  .about-us,
   .offers {
     padding: 20px 100px;
   }
