@@ -140,7 +140,7 @@ body.modal-active::after {
 		background-position: center;
 		background-size: cover;
         margin-bottom: 80px;
-		z-index: 5;
+		z-index: 0;
 	}
     .sticky {
         position: fixed;
