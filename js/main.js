@@ -11,12 +11,11 @@ document.getElementById("offer-btn").addEventListener("click", function () {
   scrollToSection('.offers');
 }, false);
 document.getElementById("contact-btn").addEventListener("click", function () {
-  scrollToSection('.offers');
+  scrollToSection('.page-footer');
 }, false);
 
 var scrollToSection = function (yy) {
   $.scrollTo($(yy).offset().top - 80, 500);
-  console.log($(yy).offset().top);
   var pageHeader = document.querySelector(".page-header");
   pageHeader.classList.remove("opened-nav");
 
