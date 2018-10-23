@@ -255,7 +255,7 @@ p {
 }
 
 .offers {
-  background-color: #84817a;
+  background-color: #515047;
   padding: 40px;
 }
 
@@ -289,7 +289,7 @@ p {
 }
 
 .curtain-2 {
-  background-color: #84817a;
+  background-color: #515047;
   transition-delay: .4s;
 }
 
@@ -337,9 +337,9 @@ body.loaded .main-nav {
 }
 
 .one-offer h2 {
-  color: #de7244;
   font-weight: normal;
   font-size: 20rem;
+    transition: color .5s;
 }
 
 .one-offer p {
@@ -350,6 +350,9 @@ body.loaded .main-nav {
 .one-offer.opened-offer {
   max-height: 1000px;
   transition: max-height 1s;
+}
+.one-offer.opened-offer h2{
+    color:#cd6133;
 }
 
 /*===========================================*/
