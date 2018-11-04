@@ -82,6 +82,7 @@ body.modal-active::after {
     justify-content: space-evenly;
   }
 
+/*
   .one-offer {
     width: calc(50% - 300px);
     min-width: 300px;
@@ -92,10 +93,13 @@ body.modal-active::after {
     margin-bottom: 25px;
     margin-top: 25px;
   }
+*/
 
+/*
   .one-offer.opened-offer {
     max-height: 50px;
   }
+*/
 
   body {
     font-weight: 400;
