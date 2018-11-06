@@ -351,6 +351,12 @@ body.loaded .main-nav {
     font-weight: 500;
 }
 
+.one-offer h2 {
+  font-weight: normal;
+  font-size: 20rem;
+    transition: color .5s;
+}
+
 .one-offer p {
   margin-top: 20px;
   margin-bottom: 0;
