@@ -82,6 +82,7 @@ body.modal-active::after {
     justify-content: space-evenly;
   }
 
+/*
   .one-offer {
     width: calc(50% - 300px);
     min-width: 300px;
@@ -92,13 +93,16 @@ body.modal-active::after {
     margin-bottom: 25px;
     margin-top: 25px;
   }
+*/
 
+/*
   .one-offer.opened-offer {
     max-height: 50px;
   }
+*/
 
   body {
-    font-weight: 400;
+    font-weight: 700;
   }
 
   .hamburger {
@@ -106,6 +110,7 @@ body.modal-active::after {
   }
 
   .main-nav {
+    font-weight: 500;
     height: 80px;
     flex-direction: row;
     justify-content: center;
@@ -200,7 +205,7 @@ body.modal-active::after {
 
   main {
     font-size: 18rem;
-    line-height: 50px;
+    line-height: 30px;
     padding-top: 0;
   }
 
