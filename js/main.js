@@ -38,16 +38,16 @@ ham.addEventListener("click", function () {
   }
 }, false);
 
-var offer = document.getElementsByClassName("one-offer");
+var offer = document.querySelectorAll(".one-offer > header");
 
-for (let i = 0; i < offer.length; i++) {
-  offer[i].addEventListener("click", function () {
+offer.forEach((element, index) => {
+  element.addEventListener("click", function () {
     var otherOffers = document.getElementsByClassName("one-offer");
 
     var onlyEl = true;
 
     for (var j = 0; j < otherOffers.length; j++) {
-      if (j !== i) {
+      if (j !== index) {
         if (otherOffers[j].classList.contains("opened-offer")) {
           otherOffers[j].classList.remove("opened-offer");
           onlyEl = false;
@@ -55,7 +55,7 @@ for (let i = 0; i < offer.length; i++) {
       }
     }
 
-    this.classList.toggle("opened-offer");
+    otherOffers[index].classList.toggle("opened-offer");
 
     window.setTimeout(function () {
       if (document.querySelector(".one-offer.opened-offer") !== null) {
@@ -66,7 +66,7 @@ for (let i = 0; i < offer.length; i++) {
     }, onlyEl ? 100 : 700);
 
   }, false);
-}
+});
 
 document.querySelector("body").addEventListener("keydown", function (e) {
   if (e.keyCode === 27) {

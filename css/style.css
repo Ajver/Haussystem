@@ -333,7 +333,6 @@ body.loaded .main-nav {
   text-align: left;
   box-sizing: border-box;
   overflow: hidden;
-  cursor: pointer;
 /*  border-bottom: 1px solid #cd6133;*/
 
   transition: max-height .7s, box-shadow .2s, transform .2s;
@@ -343,6 +342,7 @@ body.loaded .main-nav {
   margin-bottom: 20px;
     text-align: center;
     text-transform: uppercase;
+    cursor: pointer;  
 }
 .one-offer section header {
   margin: 50px 0 15px 0;
