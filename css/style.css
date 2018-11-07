@@ -251,12 +251,15 @@ p {
 
 .about-us {
   background-color: #cd6133;
-  padding: 40px;
 }
 
 .offers {
   background-color: #515047;
-  padding: 40px;
+}
+
+.offers, 
+.about-us {
+  padding: 15px;
 }
 
 .curtain-0,
@@ -336,19 +339,30 @@ body.loaded .main-nav {
   transition: max-height .7s, box-shadow .2s, transform .2s;
 }
 
-.one-offer header {
+.one-offer header h2 {
   margin-bottom: 20px;
     text-align: center;
     text-transform: uppercase;
 }
-.one-offer .underline{
-    position:absolute;
-    width:200px;
-    height: 5px;
-    color:red;
-    top:0;
+.one-offer section header {
+  margin: 50px 0 15px 0;
+  text-align: center;
+  color: #151515;
+  text-transform: uppercase;
 }
-
+.one-offer .underline{
+  position:absolute;
+  width:200px;
+  height: 5px;
+  color:red;
+  top:0;
+}
+.one-offer h5 {
+  margin: 0;
+  margin-top: 20px;
+  color: #151515;
+  font-size: 22rem;
+}
 .one-offer h2 {
   font-weight: normal;
   font-size: 20rem;
@@ -368,7 +382,7 @@ body.loaded .main-nav {
 }
 
 .one-offer.opened-offer {
-  max-height: 1000px;
+  max-height: 10000px;
   transition: max-height 1s;
 }
 .one-offer.opened-offer h2,
