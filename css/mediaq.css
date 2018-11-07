@@ -82,6 +82,11 @@ body.modal-active::after {
     justify-content: space-evenly;
   }
 
+  .offers-blocks ul {
+    margin: auto;
+    width: 400px;
+  }
+
 /*
   .one-offer {
     width: calc(50% - 300px);

@@ -318,6 +318,10 @@ body.loaded .main-nav {
 
 /*===========================================*/
 
+.offers-blocks ul {
+  margin-left: 20px;
+}
+
 .one-offer {
   width: 100%;
   min-height: 35px;
@@ -335,6 +339,7 @@ body.loaded .main-nav {
 .one-offer header {
   margin-bottom: 20px;
     text-align: center;
+    text-transform: uppercase;
 }
 .one-offer .underline{
     position:absolute;
@@ -366,7 +371,8 @@ body.loaded .main-nav {
   max-height: 1000px;
   transition: max-height 1s;
 }
-.one-offer.opened-offer h2{
+.one-offer.opened-offer h2,
+.one-offer:hover h2 {
     color:#cd6133;
 }
 
