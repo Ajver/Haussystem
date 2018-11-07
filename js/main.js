@@ -62,8 +62,6 @@ offer.forEach((element, index) => {
         let offY = window.innerWidth >= 740 ? 1059 : 0;
         var yy = document.querySelector(".one-offer.opened-offer").offsetTop - 120 + offY;
 
-        console.log(document.querySelector(".container").style);
-
         $.scrollTo(yy, 350);
       }
     }, onlyEl ? 100 : 700);
