@@ -38,15 +38,15 @@ ham.addEventListener("click", function () {
   }
 }, false);
 
-var offer = document.querySelectorAll(".one-offer > header");
+let offer = document.querySelectorAll(".one-offer > header");
 
 offer.forEach((element, index) => {
   element.addEventListener("click", function () {
-    var otherOffers = document.getElementsByClassName("one-offer");
+    let otherOffers = document.getElementsByClassName("one-offer");
 
-    var onlyEl = true;
+    let onlyEl = true;
 
-    for (var j = 0; j < otherOffers.length; j++) {
+    for (let j = 0; j < otherOffers.length; j++) {
       if (j !== index) {
         if (otherOffers[j].classList.contains("opened-offer")) {
           otherOffers[j].classList.remove("opened-offer");
@@ -60,13 +60,43 @@ offer.forEach((element, index) => {
     window.setTimeout(function () {
       if (document.querySelector(".one-offer.opened-offer") !== null) {
         let offY = window.innerWidth >= 740 ? 1059 : 0;
-        var yy = document.querySelector(".one-offer.opened-offer").offsetTop - 120 + offY;
+        let yy = document.querySelector(".one-offer.opened-offer").offsetTop - 120 + offY;
 
         $.scrollTo(yy, 350);
       }
-    }, onlyEl ? 100 : 700);
+    }, onlyEl ? 100 : 1400);
 
   }, false);
+});
+
+let offerPart = document.querySelectorAll(".one-offer section > header");
+
+offerPart.forEach((element, index) => {
+  element.addEventListener('click', () => {
+    let sections = document.getElementsByClassName("offer-part");
+    let onlyEl = true;
+
+    for (let j = 0; j < sections.length; j++) {
+      if (j !== index) {
+        if (sections[j].classList.contains("opened-offer")) {
+          sections[j].classList.remove("opened-offer");
+          onlyEl = false;
+        }
+      }
+    }
+
+    sections[index].classList.toggle("opened-offer");
+
+    window.setTimeout(function () {
+      let openedOffPart = document.querySelector(".one-offer section.opened-offer");
+      if (openedOffPart !== null) {
+        let offY = window.innerWidth >= 740 ? 1059 : 0;
+        let yy = openedOffPart.offsetTop - 120 + offY;
+
+        $.scrollTo(yy, 350);
+      }
+    }, onlyEl ? 100 : 1400);
+  });
 });
 
 document.querySelector("body").addEventListener("keydown", function (e) {
