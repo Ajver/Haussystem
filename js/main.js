@@ -59,7 +59,10 @@ offer.forEach((element, index) => {
 
     window.setTimeout(function () {
       if (document.querySelector(".one-offer.opened-offer") !== null) {
-        var yy = document.querySelector(".one-offer.opened-offer").offsetTop - 120;
+        let offY = window.innerWidth >= 740 ? 1059 : 0;
+        var yy = document.querySelector(".one-offer.opened-offer").offsetTop - 120 + offY;
+
+        console.log(document.querySelector(".container").style);
 
         $.scrollTo(yy, 350);
       }
