@@ -40,7 +40,7 @@ var nextSlide = function() {
   slideIndex = (slideIndex+1) % slides.length;
   
   
-  window.setTimeout(nextSlide, 5000);
+  window.setTimeout(nextSlide, 6000);
 }
 
 nextSlide();
