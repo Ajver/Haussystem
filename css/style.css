@@ -335,14 +335,12 @@ body.loaded .main-nav {
 
 .one-offer header h2 {
   margin-bottom: 20px;
-  background-color: #252525;
 }
 .one-offer section {
   margin: 50px 0 15px 0;
 }
 .one-offer section header {
-  color: #151515;
-  background-color: #999999;
+  color: #af5027;
 
   transition: color .5s;
 }
@@ -357,9 +355,13 @@ body.loaded .main-nav {
   width: 400px;
   max-width: 100%;
   padding: 5px;
-  border-radius: 5px;
   border-bottom: 1px solid #af5027;
-  box-shadow: 0 1px 4px 0 #333333;
+}
+.one-offer section header{
+    border-bottom: 1px solid white;
+}
+h3{
+    font-weight: normal;
 }
 
 .one-offer,
@@ -383,18 +385,13 @@ body.loaded .main-nav {
   margin-top: 20px;
   color: #151515;
   font-size: 22rem;
+    font-weight: 500;
 }
 .one-offer h2 {
   font-weight: normal;
   font-size: 20rem;
     transition: color .5s;
     font-weight: 500;
-}
-
-.one-offer h2 {
-  font-weight: normal;
-  font-size: 20rem;
-    transition: color .5s;
 }
 
 .one-offer p {
@@ -407,15 +404,17 @@ body.loaded .main-nav {
   transition: max-height 3s;
 }
 
-.one-offer.opened-offer h2,
-.one-offer:hover h2 {
+.one-offer.opened-offer h2{
+    border:1px solid #af5027;  
+}
+.one-offer h2:click {
   color:#cd6133;
 }
-
-
-.one-offer section header:hover,
+.one-offer section header:click{
+  color:white;
+}
 .one-offer section.opened-offer header {
-  color:#a14720;
+    border:1px solid white;
 }
 
 /*===========================================*/
