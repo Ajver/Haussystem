@@ -38,38 +38,66 @@ ham.addEventListener("click", function () {
   }
 }, false);
 
-var offer = document.getElementsByClassName("one-offer");
+let offer = document.querySelectorAll(".one-offer > header");
 
-for (let i = 0; i < offer.length; i++) {
-  offer[i].addEventListener("click", function () {
-    if (window.innerWidth < 740) {
-      var otherOffers = document.getElementsByClassName("one-offer");
+offer.forEach((element, index) => {
+  element.addEventListener("click", function () {
+    let otherOffers = document.getElementsByClassName("one-offer");
 
-      var onlyEl = true;
+    let onlyEl = true;
 
-      for (var j = 0; j < otherOffers.length; j++) {
-        if (j !== i) {
-          if (otherOffers[j].classList.contains("opened-offer")) {
-            otherOffers[j].classList.remove("opened-offer");
-            onlyEl = false;
-          }
+    for (let j = 0; j < otherOffers.length; j++) {
+      if (j !== index) {
+        if (otherOffers[j].classList.contains("opened-offer")) {
+          otherOffers[j].classList.remove("opened-offer");
+          onlyEl = false;
         }
       }
-
-      this.classList.toggle("opened-offer");
-
-      window.setTimeout(function () {
-        if (document.querySelector(".one-offer.opened-offer") !== null) {
-          var yy = document.querySelector(".one-offer.opened-offer").offsetTop - 120;
-
-          $.scrollTo(yy, 350);
-        }
-      }, onlyEl ? 100 : 700);
-    } else {
-      showModalOffer(offer[i]);
     }
+
+    otherOffers[index].classList.toggle("opened-offer");
+
+    window.setTimeout(function () {
+      if (document.querySelector(".one-offer.opened-offer") !== null) {
+        let offY = window.innerWidth >= 740 ? 1059 : 0;
+        let yy = document.querySelector(".one-offer.opened-offer").offsetTop - 120 + offY;
+
+        $.scrollTo(yy, 350);
+      }
+    }, onlyEl ? 100 : 1400);
+
   }, false);
-}
+});
+
+let offerPart = document.querySelectorAll(".one-offer section > header");
+
+offerPart.forEach((element, index) => {
+  element.addEventListener('click', () => {
+    let sections = document.getElementsByClassName("offer-part");
+    let onlyEl = true;
+
+    for (let j = 0; j < sections.length; j++) {
+      if (j !== index) {
+        if (sections[j].classList.contains("opened-offer")) {
+          sections[j].classList.remove("opened-offer");
+          onlyEl = false;
+        }
+      }
+    }
+
+    sections[index].classList.toggle("opened-offer");
+
+    window.setTimeout(function () {
+      let openedOffPart = document.querySelector(".one-offer section.opened-offer");
+      if (openedOffPart !== null) {
+        let offY = window.innerWidth >= 740 ? 1059 : 0;
+        let yy = openedOffPart.offsetTop - 120 + offY;
+
+        $.scrollTo(yy, 350);
+      }
+    }, onlyEl ? 100 : 1400);
+  });
+});
 
 document.querySelector("body").addEventListener("keydown", function (e) {
   if (e.keyCode === 27) {
@@ -82,9 +110,6 @@ document.querySelector("body").addEventListener("keydown", function (e) {
   //    body.classList.remove("modal-active");
   //  }
 })
-$(".arrow").click(function()
-   {
-     	$.scrollTo(".main-nav",500);
-   });
-
-
+$(".arrow").click(function () {
+  $.scrollTo(".main-nav", 500);
+});

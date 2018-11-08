@@ -176,6 +176,7 @@ h1 {
   font-weight: 600;
   font-style: italic;
   letter-spacing: 4px;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -250,12 +251,15 @@ p {
 
 .about-us {
   background-color: #cd6133;
-  padding: 40px;
 }
 
 .offers {
-  background-color: #84817a;
-  padding: 40px;
+  background-color: #515047;
+}
+
+.offers, 
+.about-us {
+  padding: 15px;
 }
 
 .curtain-0,
@@ -288,7 +292,7 @@ p {
 }
 
 .curtain-2 {
-  background-color: #84817a;
+  background-color: #515047;
   transition-delay: .4s;
 }
 
@@ -317,30 +321,80 @@ body.loaded .main-nav {
 
 /*===========================================*/
 
+.offers-blocks ul {
+  margin-left: 20px;
+}
+
 .one-offer {
   width: 100%;
-  min-height: 50px;
-  max-height: 50px;
-  background-color: #514f4b;
-  box-shadow: 0 4px 8px 0 #3d3d3d;
   margin: 20px 0;
-  text-align: center;
-  padding: 15px;
+  text-align: left;
   box-sizing: border-box;
-  overflow: hidden;
-  cursor: pointer;
-  border-bottom: 1px solid #cd6133;
-	border-radius: 10px;
-
-  transition: max-height .7s, box-shadow .2s, transform .2s;
+/*  border-bottom: 1px solid #cd6133;*/
 }
 
-.one-offer:hover {
-  box-shadow: 0 8px 16px 0 #3d3d3d;
-}
-
-.one-offer header {
+.one-offer header h2 {
   margin-bottom: 20px;
+  background-color: #252525;
+}
+.one-offer section {
+  margin: 50px 0 15px 0;
+}
+.one-offer section header {
+  color: #151515;
+  background-color: #999999;
+
+  transition: color .5s;
+}
+
+.one-offer section header,
+.one-offer header h2 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;  
+  width: 400px;
+  max-width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border-bottom: 1px solid #af5027;
+  box-shadow: 0 1px 4px 0 #333333;
+}
+
+.one-offer,
+.one-offer section {
+  min-height: 45px;
+  max-height: 45px;
+  overflow: hidden;
+
+  transition: max-height 1.4s, box-shadow .2s, transform .2s;
+}
+
+.one-offer .underline{
+  position:absolute;
+  width:200px;
+  height: 5px;
+  color:red;
+  top:0;
+}
+.one-offer h5 {
+  margin: 0;
+  margin-top: 20px;
+  color: #151515;
+  font-size: 22rem;
+}
+.one-offer h2 {
+  font-weight: normal;
+  font-size: 20rem;
+    transition: color .5s;
+    font-weight: 500;
+}
+
+.one-offer h2 {
+  font-weight: normal;
+  font-size: 20rem;
+    transition: color .5s;
 }
 
 .one-offer p {
@@ -348,10 +402,20 @@ body.loaded .main-nav {
   margin-bottom: 0;
 }
 
-.one-offer.opened-offer {
-  box-shadow: 0 8px 16px 0 #505050;
-  max-height: 1000px;
-  transition: max-height 1s;
+.opened-offer {
+  max-height: 10000px !important;
+  transition: max-height 3s;
+}
+
+.one-offer.opened-offer h2,
+.one-offer:hover h2 {
+  color:#cd6133;
+}
+
+
+.one-offer section header:hover,
+.one-offer section.opened-offer header {
+  color:#a14720;
 }
 
 /*===========================================*/
