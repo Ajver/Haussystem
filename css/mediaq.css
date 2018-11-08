@@ -86,6 +86,12 @@ body.modal-active::after {
     margin: auto;
     width: 400px;
   }
+.one-offer section header:hover{
+  color:white;
+}
+    .one-offer h2:hover {
+  color:#cd6133;
+}
 
 /*
   .one-offer {
