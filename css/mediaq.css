@@ -149,25 +149,63 @@ body.modal-active::after {
   }
 
   .container {
-    margin-top: calc(100vh + 80px);
+    margin-top: 80px; /* calc(100vh + 80px); */
     z-index: 10;
   }
 
   .page-header {
-    width: 100%;
     height: 100vh;
-    position: fixed;
-    background-image: url(../img/adult-architect-architectural-design-1260309.jpg);
-    background-position: center;
-    background-size: cover;
+    position: static;
     margin-bottom: 80px;
     z-index: 0;
   }
 
-  .main-nav.sticky { 
-    box-shadow: 0 0 16px 8px #666 !important; 
+  .page-header .slider,
+  .page-header .slider-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
   }
   
+  .page-header .slider-img {
+    background-position: center;
+    background-size: cover;
+    transform: translateX(-100%);
+    z-index: 0;
+    
+    transition: transform 1s;
+    transition-delay: 1s;
+  }
+  
+  .page-header .slider-img.active {
+    transform: translateX(0);
+    z-index: 1;
+    transition-delay: 0s;
+    box-shadow: -2px 0 100px 5px #666666;
+  }
+  
+  .page-header .slider-img.slider-img-1 {
+    background-image: url("../img/1.jpg");
+  }
+  .page-header .slider-img.slider-img-2 {
+    background-image: url("../img/2.jpg");
+  }
+  .page-header .slider-img.slider-img-3 {
+    background-image: url("../img/3.jpg");
+  }
+  .page-header .slider-img.slider-img-4 {
+    background-image: url("../img/4.jpg");
+  }
+  .page-header .slider-img.slider-img-5 {
+    background-image: url("../img/5.jpg");
+  }
+
+  .main-nav.sticky {
+    box-shadow: 0 0 16px 8px #666 !important;
+  }
+
   .sticky {
     position: fixed;
     top: 0;
@@ -175,11 +213,26 @@ body.modal-active::after {
 
   .logo {
     position: absolute;
+    z-index: 1;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 700px;
     width: 700px;
+  }
+  .logo::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #ffffff;
+    opacity: 0.3;
+    box-shadow: 0 0 20px 20px #ffffff;
+    border-radius: 20px;
+    z-index: -1;
   }
 
   .page-footer {
@@ -214,7 +267,7 @@ body.modal-active::after {
     font-size: 14rem;
   }
 
-  main {
+  main {  
     font-size: 18rem;
     line-height: 30px;
     padding-top: 0;
@@ -223,6 +276,7 @@ body.modal-active::after {
   .arrow {
     display: block;
     position: absolute;
+    z-index: 1;
     top: 85%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-90deg);
