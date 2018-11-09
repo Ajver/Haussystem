@@ -25,7 +25,7 @@ body {
 
 .page-header {
   background-color: #aaa;
-  position: static;
+  position: fixed;
   z-index: 100;
   display: flex;
   justify-content: space-between;
