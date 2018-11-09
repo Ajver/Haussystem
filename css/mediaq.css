@@ -159,6 +159,10 @@ body.modal-active::after {
     margin-bottom: 80px;
     z-index: 0;
   }
+  
+  .slider {
+    display: block;
+	}
 
   .page-header .slider,
   .page-header .slider-img {
