@@ -3,6 +3,7 @@ var header = document.querySelector('.page-header');
 //header.style.backgroundImage = "url(img/3.jpg)";
 
 $(document).ready(function() {
+    mainNavSticky();
     $(window).scroll(mainNavSticky);
     $(window).resize(mainNavSticky);
 });

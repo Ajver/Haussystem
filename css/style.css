@@ -522,7 +522,7 @@ h3{
   width: 40px;
   height: 40px;
   border: 2px solid #303030;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -530,13 +530,14 @@ h3{
   font-size: 100%;
   color: #303030;
 
-  transition: color .2s, border-color .2s;
+  transition: color .2s, border-color .2s, opacity .2s;
 }
 
 .previous-slide-btn:hover,
 .next-slide-btn:hover {
   color: #af5027;
   border-color: #af5027;
+  opacity: 1;
   cursor: pointer;
 }
 

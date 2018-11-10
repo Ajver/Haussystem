@@ -280,6 +280,11 @@ body.modal-active::after {
     right:-10%;
     bottom:-20%;
   }
+
+  .previous-slide-btn,
+  .next-slide-btn {
+    opacity: 0.8;
+  }
 }
 
 @media (min-width: 1200px) {
