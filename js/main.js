@@ -13,6 +13,9 @@ document.getElementById("offer-btn").addEventListener("click", function () {
 document.getElementById("contact-btn").addEventListener("click", function () {
   scrollToSection('.page-footer');
 }, false);
+document.getElementById("implementations-btn").addEventListener("click", function () {
+  scrollToSection('.implementations');
+}, false);
 
 var scrollToSection = function (yy) {
   $.scrollTo($(yy).offset().top - 80, 500);
