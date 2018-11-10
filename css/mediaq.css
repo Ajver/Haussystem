@@ -137,7 +137,7 @@ body.modal-active::after {
 
     transform: translateX(-100vw);
 
-    transition: transform .5s ease .6s, box-shadow .3s;
+    transition: transform .5s ease .6s, box-shadow .2s;
   }
 
   body.loaded .main-nav {
@@ -181,7 +181,7 @@ body.modal-active::after {
   }
 
   .main-nav.sticky {
-    box-shadow: 0 0 16px 8px #666 !important;
+    box-shadow: 0 0 16px 8px #555 !important;
   }
 
   .sticky {
@@ -279,6 +279,11 @@ body.modal-active::after {
   h1::before{
     right:-10%;
     bottom:-20%;
+  }
+
+  .previous-slide-btn,
+  .next-slide-btn {
+    opacity: 0.8;
   }
 }
 

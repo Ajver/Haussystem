@@ -61,7 +61,7 @@ body {
 .hamburger-block {
   width: 100%;
   height: 8px;
-  background-color: #e55039;
+  background-color: #cd6133;
   transition: 0.4s;
   border-radius: 5px;
 }
@@ -69,7 +69,7 @@ body {
 	display:none;
 }
 .page-header.opened-nav .hamburger-block {
-  background-color: #e55039;
+  background-color: #cd6133;
 }
 
 .hamburger-block.middle {
@@ -97,7 +97,7 @@ body {
   top: 100px;
   width: 100%;
   height: 0;
-  border-bottom: 1px solid #e55039;
+  border-bottom: 1px solid #cd6133;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,7 +129,7 @@ body.loaded .main-nav {
   transition: .3s;
 }
 
-.menu-btn::before {
+ .menu-btn::before {
   content: "";
   width: 32rem;
   height: 32rem;
@@ -139,25 +139,29 @@ body.loaded .main-nav {
 }
 
 .menu-btn.about-us-btn::before {
-  background: url(../img/engineer.png);
+  background: url(../img/info.png);
 }
 
 .menu-btn.offer-btn::before {
-  background: url(../img/sketch.png);
+  background: url(../img/edit.png);
 }
 
 .menu-btn.contact-btn::before {
-  background: url(../img/contact.png);
-}
+  background: url(../img/contact2.png);
+} 
+.menu-btn.implementations-btn::before {
+  background: url(../img/tools.png);
+} 
 
 .menu-btn.about-us-btn::before,
 .menu-btn.offer-btn::before,
-.menu-btn.contact-btn::before {
+.menu-btn.contact-btn::before, 
+.menu-btn.implementations-btn::before {
   background-size: cover;
 }
 
 .menu-btn:hover {
-  border-color: #e55039;
+  border-color: #cd6133;
 }
 
 main {
@@ -293,7 +297,8 @@ p {
 }
 
 .offers, 
-.about-us {
+.about-us,
+.implementations {
   padding: 15px;
 }
 
@@ -522,14 +527,31 @@ h3{
 
 .previous-slide-btn,
 .next-slide-btn {
-  width: 25px;
-  height: 25px;
-  background-color: #ffffff;
-  border: 1px solid #000000;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #303030;
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   position: absolute;
   top: 50%;
   z-index: 5;
+  font-size: 100%;
+  color: #303030;
+
+  transition: color .2s, border-color .2s, opacity .2s;
+}
+
+.previous-slide-btn:hover,
+.next-slide-btn:hover {
+  color: #af5027;
+  border-color: #af5027;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.previous-slide-btn:focus,
+.next-slide-btn:focus {
+  outline: none;
 }
 
 .previous-slide-btn {
