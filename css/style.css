@@ -530,6 +530,12 @@ h3{
   position: absolute;
   top: 50%;
   z-index: 5;
+  font-size: 25px;
+}
+
+.previous-slide-btn:focus,
+.next-slide-btn:focus {
+  outline: none;
 }
 
 .previous-slide-btn {
