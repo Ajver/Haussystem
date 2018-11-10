@@ -181,7 +181,7 @@ body.modal-active::after {
   }
 
   .main-nav.sticky {
-    box-shadow: 0 0 16px 8px #666 !important;
+    box-shadow: 0 0 16px 8px #555 !important;
   }
 
   .sticky {
