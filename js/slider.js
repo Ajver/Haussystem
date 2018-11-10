@@ -22,9 +22,10 @@ const mainNavSticky = () => {
 
 var nextSlide = function(className, isTimeout, si) {  
   var slides = document.getElementsByClassName(className);
-  console.log(slides);
-  console.log('SI: ' + si);
+  si = (si+slides.length) % slides.length;
+  
   var curSlide = slides[si];
+  
   
   // Removing class from last slide 
   if(si == 0) { 
@@ -38,9 +39,11 @@ var nextSlide = function(className, isTimeout, si) {
   
   if(isTimeout) {
     window.setTimeout(() => {
-        nextSlide(className, isTimeout, (si+1) % slides.length);
+        nextSlide(className, isTimeout, si+1);
     }, 6000);
   }
+
+  return si;
 }
 
 nextSlide('header-slider-img', true, 0);
@@ -49,27 +52,27 @@ var prevSlide = function(className) {
     var slides = document.getElementsByClassName(className);
     var curSlide = slides[slideIndex];
 
-    // Removing class from last slide 
-    if(slideIndex == slides.length-1) { 
-        slides[0].classList.remove("active");
+    console.log(slides);
+    console.log('SI: ' + slideIndex);
+
+    if(slideIndex == 0) { 
+        slides[slides.length-1].classList.add("active");
     }else {
-        slides[slideIndex+1].classList.remove("active");
+        slides[slideIndex-1].classList.add("active");
     }
 
     // Setting class for active slide
-    curSlide.classList.add("active");
-
-    // Next slide index
-    slideIndex = (slideIndex+1) % slides.length;
+    curSlide.classList.remove("active");
 }
 
 let slideIndex = 0;
 
 document.querySelector('.previous-slide-btn').addEventListener('click', () => {
-    --slideIndex;
-    prevSlide('slider-img');
+    // --slideIndex;
+    // prevSlide('slider-img');
+    slideIndex = nextSlide('slider-img', false, slideIndex-1);
 });
 
 document.querySelector('.next-slide-btn').addEventListener('click', () => {
-    nextSlide('slider-img', false, ++slideIndex);
+    slideIndex = nextSlide('slider-img', false, slideIndex+1);
 });
