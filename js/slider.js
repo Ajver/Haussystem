@@ -22,8 +22,8 @@ const mainNavSticky = () => {
 
 var slideIndex = 0;
 
-var nextSlide = function() {  
-  var slides = document.getElementsByClassName("header-slider-img");
+var nextSlide = function(className, isTimeout) {  
+  var slides = document.getElementsByClassName(className);
   var curSlide = slides[slideIndex];
   
   // Removing class from last slide 
@@ -39,10 +39,35 @@ var nextSlide = function() {
   // Next slide index
   slideIndex = (slideIndex+1) % slides.length;
   
-  
-  window.setTimeout(nextSlide, 6000);
+  if(isTimeout) {
+    window.setTimeout(nextSlide, 6000, className, isTimeout);
+  }
 }
 
 nextSlide();
 
+var prevSlide = function(className) {  
+    var slides = document.getElementsByClassName(className);
+    var curSlide = slides[slideIndex];
 
+    // Removing class from last slide 
+    if(slideIndex == slides.length-1) { 
+        slides[0].classList.remove("active");
+    }else {
+        slides[slideIndex+1].classList.remove("active");
+    }
+
+    // Setting class for active slide
+    curSlide.classList.add("active");
+
+    // Next slide index
+    slideIndex = (slideIndex+1) % slides.length;
+}
+
+document.querySelector('.previous-slide-btn').addEventListener('click', () => {
+    prevSlide('slider-img', false);
+});
+
+document.querySelector('.next-slide-btn').addEventListener('click', () => {
+    nextSlide('slider-img');
+});
