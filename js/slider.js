@@ -23,7 +23,7 @@ const mainNavSticky = () => {
 
 var nextSlide = function(className, isTimeout, si) {  
   var slides = document.getElementsByClassName(className);
-  si = (si+slides.length) % slides.length;
+  si = si % slides.length;
   
   var curSlide = slides[si];
   
@@ -49,29 +49,29 @@ var nextSlide = function(className, isTimeout, si) {
 
 nextSlide('header-slider-img', true, 0);
 
-var prevSlide = function(className) {  
+var prevSlide = function(className, si) {  
     var slides = document.getElementsByClassName(className);
-    var curSlide = slides[slideIndex];
+    si = (si+slides.length) % slides.length;
 
-    console.log(slides);
-    console.log('SI: ' + slideIndex);
+    var curSlide = slides[si];
 
-    if(slideIndex == 0) { 
-        slides[slides.length-1].classList.add("active");
+    // Removing class from last slide 
+    if(si == slides.length-1) { 
+        slides[0].classList.remove("active");
     }else {
-        slides[slideIndex-1].classList.add("active");
+        slides[si+1].classList.remove("active");
     }
 
     // Setting class for active slide
-    curSlide.classList.remove("active");
+    curSlide.classList.add("active");
+
+    return si;
 }
 
 let slideIndex = 0;
 
 document.querySelector('.previous-slide-btn').addEventListener('click', () => {
-    // --slideIndex;
-    // prevSlide('slider-img');
-    slideIndex = nextSlide('slider-img', false, slideIndex-1);
+    slideIndex = prevSlide('slider-img', slideIndex-1);
 });
 
 document.querySelector('.next-slide-btn').addEventListener('click', () => {
