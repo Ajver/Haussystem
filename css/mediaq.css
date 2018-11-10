@@ -137,7 +137,7 @@ body.modal-active::after {
 
     transform: translateX(-100vw);
 
-    transition: transform .5s ease .6s, box-shadow .3s;
+    transition: transform .5s ease .6s, box-shadow .2s;
   }
 
   body.loaded .main-nav {
