@@ -519,15 +519,25 @@ h3{
 
 .previous-slide-btn,
 .next-slide-btn {
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #303030;
   background-color: #ffffff;
-  border: 1px solid #000000;
   border-radius: 50%;
   position: absolute;
   top: 50%;
   z-index: 5;
-  font-size: 25px;
+  font-size: 100%;
+  color: #303030;
+
+  transition: color .2s, border-color .2s;
+}
+
+.previous-slide-btn:hover,
+.next-slide-btn:hover {
+  color: #af5027;
+  border-color: #af5027;
+  cursor: pointer;
 }
 
 .previous-slide-btn:focus,
