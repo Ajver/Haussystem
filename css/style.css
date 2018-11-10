@@ -425,8 +425,9 @@ h3{
 .implementations {
   background-color: #303030;
   overflow: auto;
-  color: #515047;
+  color: white;
 }
 
 .implementations .slider img {
   width: 100%;
+}
