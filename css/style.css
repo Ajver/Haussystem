@@ -115,7 +115,7 @@ body.loaded .main-nav {
 }
 
 .page-header.opened-nav + .main-nav {
-  height: 250px;
+  height: 300px;
 }
 
 .menu-btn {
