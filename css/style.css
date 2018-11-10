@@ -257,7 +257,7 @@ p {
 }
 
 .offers {
-  background-color: #515151;
+  background-color: #404040;
 }
 
 .offers, 
@@ -423,9 +423,9 @@ h3{
 /*===========================================*/
 
 .implementations {
-  background-color: #404040;
+  background-color: #303030;
   overflow: auto;
-  color: #515047;
+  color: #ffffff;
 }
 
 .implementations .slider img {
