@@ -296,7 +296,8 @@ p {
 }
 
 .offers, 
-.about-us {
+.about-us,
+.implementations {
   padding: 15px;
 }
 
@@ -496,7 +497,6 @@ h3{
 }
 
 .slider-img {
-
   transition: transform 1s, z-index 3s;
 }
 
