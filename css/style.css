@@ -155,7 +155,8 @@ body.loaded .main-nav {
 
 .menu-btn.about-us-btn::before,
 .menu-btn.offer-btn::before,
-.menu-btn.contact-btn::before {
+.menu-btn.contact-btn::before, 
+.menu-btn.implementations-btn::before {
   background-size: cover;
 }
 
