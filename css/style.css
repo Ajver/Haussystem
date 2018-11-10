@@ -485,6 +485,9 @@ h3{
 .slider-img {
   background-position: center;
   background-size: cover;
+}
+
+.header-slider-img {
   transform: translateX(-100%);
   z-index: 0;
   
@@ -492,21 +495,21 @@ h3{
   transition-delay: 1s;
 }
 
-.slider-img {
-
-  transition: transform 1s, z-index 3s;
-}
-
-.header-slider-img.active,
-.slider-img.active {
+.header-slider-img.active {
   transform: translateX(0);
   z-index: 1;
   transition-delay: 0s;
   box-shadow: -2px 0 100px 5px #666666;
 }
 
+.slider-img {
+  opacity: 0;
+
+  transition: opacity 1s;
+}
+
 .slider-img.active {
-  transition: transform 1s, z-index 0s;
+  opacity: 1;
 }
 
 .implementations .slider-img-1 {
