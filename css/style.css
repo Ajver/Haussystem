@@ -129,7 +129,7 @@ body.loaded .main-nav {
   transition: .3s;
 }
 
-.menu-btn::before {
+/* .menu-btn::before {
   content: "";
   width: 32rem;
   height: 32rem;
@@ -148,7 +148,7 @@ body.loaded .main-nav {
 
 .menu-btn.contact-btn::before {
   background: url(../img/contact.png);
-}
+} */ 
 
 .menu-btn.about-us-btn::before,
 .menu-btn.offer-btn::before,
