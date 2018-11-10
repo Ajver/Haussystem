@@ -188,7 +188,7 @@ p {
 }
 
 .page-footer {
-  background-color: #151515;
+  background-color: #202020;
   overflow: auto;
   box-sizing: border-box;
   padding: 15px;
@@ -257,7 +257,7 @@ p {
 }
 
 .offers {
-  background-color: #515047;
+  background-color: #515151;
 }
 
 .offers, 
@@ -423,7 +423,7 @@ h3{
 /*===========================================*/
 
 .implementations {
-  background-color: #aaaaaa;
+  background-color: #404040;
   overflow: auto;
   color: #515047;
   padding-bottom: 70px;
