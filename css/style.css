@@ -38,7 +38,7 @@ body {
   height: 100px;
 }
 
-.slider {
+.page-header .slider {
   display: none;
 }
 .logo {
@@ -421,3 +421,13 @@ h3{
 }
 
 /*===========================================*/
+
+.implementations {
+  background-color: #aaaaaa;
+  overflow: auto;
+  color: #515047;
+}
+
+.implementations .slider img {
+  width: 100%;
+}

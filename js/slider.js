@@ -23,7 +23,7 @@ const mainNavSticky = () => {
 var slideIndex = 0;
 
 var nextSlide = function() {  
-  var slides = document.getElementsByClassName("slider-img");
+  var slides = document.getElementsByClassName("header-slider-img");
   var curSlide = slides[slideIndex];
   
   // Removing class from last slide 
@@ -44,3 +44,5 @@ var nextSlide = function() {
 }
 
 nextSlide();
+
+
