@@ -482,15 +482,14 @@ h3{
 }
 
 .slider-img.active {
-
   transition: transform 1s, z-index 0s;
 }
 
 .implementations .slider-img-1 {
-  background-image: url("../img/1.jpg");  
+  background-image: url("../img/1.jpg");    
 }
 
-.implementations .slider-img-2 {
+.implementations .slider-img-2 { 
   background-image: url("../img/2.jpg");  
 }
 
