@@ -174,21 +174,45 @@ main {
 }
 
 h1 {
-  margin: 20px 0;
+  display: inline-block;
+  margin-left:50%;
+  margin-top: 30px;
+  margin-bottom: 30px;
   font-size: 30rem;
   font-weight: 600;
   font-style: italic;
   letter-spacing: 4px;
   text-align: center;
   text-transform: uppercase;
+  position: relative;
+
+  transform: translateX(-50%);
 }
 h1::after{
   content: "";
-  width: 10px;
+  width: 15px;
   height: 10px;
+  border-left: 1px solid #cd6133;
+  border-top: 1px solid #cd6133;
+  position: absolute;
+  left:-5%;
+  top:-5%;
 }
 h1::before{
-
+  content: "";
+  width: 15px;
+  height: 10px;
+  border-right: 1px solid #cd6133;
+  border-bottom: 1px solid #cd6133;
+  position: absolute;
+  right:-5%;
+  bottom:-5%;
+}
+.about-us h1::after{
+  border-color: #303030;
+}
+.about-us h1::before{
+  border-color: #303030;
 }
 
 p {

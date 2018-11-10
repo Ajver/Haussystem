@@ -272,6 +272,14 @@ body.modal-active::after {
   .offers {
     padding: 20px 100px;
   }
+  h1::after{
+    left:-10%;
+    top:-20%;
+  }
+  h1::before{
+    right:-10%;
+    bottom:-20%;
+  }
 }
 
 @media (min-width: 1200px) {
