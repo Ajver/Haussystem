@@ -387,6 +387,7 @@ body.loaded .main-nav {
 
 .one-offer section header,
 .one-offer header h2 {
+  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
