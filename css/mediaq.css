@@ -176,7 +176,7 @@
     cursor: pointer;
   }
 
-  .arrow:hover {
+  .arrow :hover {
     animation-name: jump;
     animation-duration: .8s;
     animation-iteration-count: infinite;
