@@ -1,7 +1,5 @@
 window.addEventListener("load", function () {
-
   document.querySelector("body").classList.add("loaded");
-
 }, false);
 
 document.getElementById("about-us-btn").addEventListener("click", function () {
@@ -102,17 +100,6 @@ offerPart.forEach((element, index) => {
   });
 });
 
-document.querySelector("body").addEventListener("keydown", function (e) {
-  if (e.keyCode === 27) {
-    removeModal();
-  }
-
-  //  var body = document.querySelector("body")
-  //  
-  //  if(body.classList.contains("modal-active")) {
-  //    body.classList.remove("modal-active");
-  //  }
-})
 $(".arrow").click(function () {
   $.scrollTo(".main-nav", 500);
 });
