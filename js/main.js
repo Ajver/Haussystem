@@ -61,9 +61,13 @@ offer.forEach((element, index) => {
     window.setTimeout(function () {
       if (document.querySelector(".one-offer.opened-offer") !== null) {
         let offY = window.innerWidth >= 740 ? 1059 : 0;
-        let yy = document.querySelector(".one-offer.opened-offer").offsetTop - 150 + offY;
-
-        $.scrollTo(yy, 350);
+        let yy = document.querySelector(".one-offer.opened-offer").offsetTop - 120 + offY;
+          
+        if ($(window).width() < 810)
+            $.scrollTo(yy, 350);
+        else
+            $.scrollTo(yy-200, 350);
+            
       }
     }, onlyEl ? 100 : 1400);
 
@@ -92,9 +96,12 @@ offerPart.forEach((element, index) => {
       let openedOffPart = document.querySelector(".one-offer section.opened-offer");
       if (openedOffPart !== null) {
         let offY = window.innerWidth >= 740 ? 1059 : 0;
-        let yy = openedOffPart.offsetTop - 150 + offY;
+        let yy = openedOffPart.offsetTop - 120 + offY;
 
-        $.scrollTo(yy, 350);
+        if ($(window).width() < 810)
+            $.scrollTo(yy, 350);
+        else
+            $.scrollTo(yy-200, 350);
       }
     }, onlyEl ? 100 : 1400);
   });
