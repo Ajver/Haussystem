@@ -61,7 +61,7 @@ offer.forEach((element, index) => {
     window.setTimeout(function () {
       if (document.querySelector(".one-offer.opened-offer") !== null) {
         let offY = window.innerWidth >= 740 ? 1059 : 0;
-        let yy = document.querySelector(".one-offer.opened-offer").offsetTop - 120 + offY;
+        let yy = document.querySelector(".one-offer.opened-offer").offsetTop - 150 + offY;
 
         $.scrollTo(yy, 350);
       }
@@ -92,7 +92,7 @@ offerPart.forEach((element, index) => {
       let openedOffPart = document.querySelector(".one-offer section.opened-offer");
       if (openedOffPart !== null) {
         let offY = window.innerWidth >= 740 ? 1059 : 0;
-        let yy = openedOffPart.offsetTop - 120 + offY;
+        let yy = openedOffPart.offsetTop - 150 + offY;
 
         $.scrollTo(yy, 350);
       }
