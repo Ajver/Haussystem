@@ -60,7 +60,7 @@ offer.forEach((element, index) => {
 
     window.setTimeout(function () {
       if (document.querySelector(".one-offer.opened-offer") !== null) {
-        let offY = window.innerWidth >= 740 ? 1059 : 0;
+        let offY = window.innerWidth >= 810 ? 1059 : 0;
         let yy = document.querySelector(".one-offer.opened-offer").offsetTop - 120 + offY;
           
         if ($(window).width() < 810)
