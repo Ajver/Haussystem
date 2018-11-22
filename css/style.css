@@ -406,9 +406,6 @@ h3{
 
 .one-offer,
 .one-offer section {
-  min-height: 45px;
-  max-height: 45px;
-  overflow: hidden;
 
   transition: max-height 1.4s, box-shadow .2s, transform .2s;
 }
@@ -439,9 +436,16 @@ h3{
   margin-bottom: 0;
 }
 
-.opened-offer {
-  max-height: 10000px !important;
+.offer-text {
   transition: max-height 3s;
+  max-height: 0;
+  overflow: hidden;
+
+  transition: max-height 1.4s;
+}
+
+.opened-offer > .offer-text {
+  max-height: 10000px !important;
 }
 
 .one-offer.opened-offer h2{
