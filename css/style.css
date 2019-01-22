@@ -77,6 +77,8 @@ body {
 }
 
 .page-header.opened-nav .hamburger-block.top {
+  -webkit-transform: translate(0, 16px) rotate(45deg);
+  -ms-transform: translate(0, 16px) rotate(45deg);
   transform: translate(0, 16px) rotate(45deg);
 }
 
@@ -88,6 +90,8 @@ body {
 }
 
 .page-header.opened-nav .hamburger-block.bottom {
+  -webkit-transform: translate(0, 16px) rotate(45deg);
+  -ms-transform: translate(0, 16px) rotate(45deg);
   transform: translate(0, -16px) rotate(-45deg);
 }
 
@@ -105,6 +109,8 @@ body {
   background-color: #aaa;
   z-index: 10;
   box-shadow: 0 0 0 0 transparent;
+  -webkit-transform: translateX(-100vw);
+  -ms-transform: translateX(-100vw);
   transform: translateX(-100vw);
 
   transition: height .5s ease 0s, transform .5s ease .6s, box-shadow .5s ease .6s;
@@ -135,6 +141,8 @@ body.loaded .main-nav {
   height: 32rem;
   display: inline-block;
   margin-right: 20rem;
+  -webkit-transform: translateY(20%);
+  -ms-transform: translateY(20%);
   transform: translateY(20%);
 }
 .menu-btn.about-us-btn::before {
@@ -192,6 +200,8 @@ h1 {
   text-transform: uppercase;
   position: relative;
 
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 h1::after{
@@ -263,6 +273,8 @@ p {
   content: "";
   width: 24px;
   height: 24px;
+  -webkit-transform: translateY(25%);
+  -ms-transform: translateY(25%);
   transform: translateY(25%);
   margin-right: 10rem;
   display: inline-block;
@@ -271,7 +283,7 @@ p {
 }
 
 .page-footer .contact.phone::before {
-  background: url(../img/phone.png);
+  background-image: url(../img/phone.png);
 }
 
 .page-footer .contact.mail::before {
@@ -348,6 +360,7 @@ body.loaded .curtain-2 {
 
 .container,
 .page-header {
+  -ms-transform: translateX(-100vw);
   transform: translateX(-100vw);
   transition-delay: .6s;
 }
@@ -360,6 +373,7 @@ body.loaded .curtain-2 {
 body.loaded .container,
 body.loaded .page-header,
 body.loaded .main-nav {
+  -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
