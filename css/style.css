@@ -267,6 +267,7 @@ p {
   margin-right: 10rem;
   display: inline-block;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .page-footer .contact.phone::before {
