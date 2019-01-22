@@ -266,6 +266,7 @@ p {
   transform: translateY(25%);
   margin-right: 10rem;
   display: inline-block;
+  background-repeat: no-repeat;
 }
 
 .page-footer .contact.phone::before {
