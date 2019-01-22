@@ -261,8 +261,8 @@ p {
 
 .page-footer .contact::before {
   content: "";
-  width: 24rem;
-  height: 24rem;
+  width: 24px;
+  height: 24px;
   transform: translateY(25%);
   margin-right: 10rem;
   display: inline-block;
