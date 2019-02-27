@@ -7,14 +7,6 @@ html {
   padding: 0;
 }
 
-/*
-
-@font-face {
-  font-family: 'RollandinEmilie';
-  src: url(fonts/RollandinEmilie.otf);
-}
-*/
-
 body {
   /*  font-family: 'RollandinEmilie';*/
   font-family: 'IBM Plex Mono', monospace;
@@ -62,8 +54,9 @@ body {
   width: 100%;
   height: 8px;
   background-color: #65A866;
-  transition: 0.4s;
   border-radius: 5px;
+
+  transition: transform .4s;
 }
 .arrow{
 	display:none;
@@ -131,8 +124,9 @@ body.loaded .main-nav {
   margin: 8px 0;
   padding: 7px;
   border: 2px solid transparent;
+  cursor: pointer;
 
-  transition: .3s;
+  transition: border .3s;
 }
 
  .menu-btn::before {
@@ -147,21 +141,21 @@ body.loaded .main-nav {
 }
 .menu-btn.about-us-btn::before {
   background: url(../img/info.png);
-filter: hue-rotate(90deg);
+  filter: hue-rotate(90deg);
 }
 
 .menu-btn.offer-btn::before {
   background: url(../img/edit.png);
-    filter: hue-rotate(90deg);
+  filter: hue-rotate(90deg);
 }
 
 .menu-btn.contact-btn::before {
   background: url(../img/contact2.png);
-    filter: hue-rotate(90deg);
+  filter: hue-rotate(90deg);
 } 
 .menu-btn.implementations-btn::before {
   background: url(../img/tools.png);
-    filter: hue-rotate(90deg);
+  filter: hue-rotate(90deg);
 } 
 
 .menu-btn.about-us-btn::before,
@@ -388,7 +382,6 @@ body.loaded .main-nav {
   margin: 20px 0;
   text-align: left;
   box-sizing: border-box;
-/*  border-bottom: 1px solid #65A866;*/
 }
 
 .one-offer header h2 {
@@ -425,7 +418,6 @@ h3{
 
 .one-offer,
 .one-offer section {
-
   transition: max-height 1.4s, box-shadow .2s, transform .2s;
 }
 
@@ -441,13 +433,13 @@ h3{
   margin-top: 20px;
   color: #151515;
   font-size: 22rem;
-    font-weight: 500;
+  font-weight: 500;
 }
 .one-offer h2 {
   font-weight: normal;
   font-size: 20rem;
-    transition: color .5s;
-    font-weight: 500;
+  transition: color .5s;
+  font-weight: 500;
 }
 
 .one-offer p {
@@ -468,7 +460,7 @@ h3{
 }
 
 .one-offer.opened-offer h2{
-    border:1px solid #65A866;  
+  border:1px solid #65A866;  
 }
 .one-offer h2:click {
   color:#65A866;
@@ -477,7 +469,7 @@ h3{
   color:white;
 }
 .one-offer section.opened-offer header {
-    border:1px solid white;
+  border:1px solid white;
 }
 
 /*===========================================*/
