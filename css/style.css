@@ -335,7 +335,6 @@ p {
   transition: transform .5s ease;
 }
 
-
 .curtain-0 {
   background-color: #000;
 }
@@ -413,10 +412,10 @@ body.loaded .main-nav {
   border-bottom: 1px solid #65A866;
 }
 .one-offer section header{
-    border-bottom: 1px solid white;
+  border-bottom: 1px solid white;
 }
 h3{
-    font-weight: normal;
+  font-weight: normal;
 }
 
 .one-offer,

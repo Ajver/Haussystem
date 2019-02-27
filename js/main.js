@@ -91,13 +91,10 @@ offerPart.forEach((element, index) => {
     window.setTimeout(function () {
       let openedOffPart = document.querySelector(".one-offer section.opened-offer");
       if (openedOffPart !== null) {
-        let offY = window.innerWidth >= 740 ? 1059 : 0;
-        let yy = openedOffPart.offsetTop - 120 + offY;
+        let offY = window.innerWidth <= 810 ? -100 : document.querySelector('.page-header').clientHeight;
+        let yy = openedOffPart.offsetTop + offY - 20;
 
-        if ($(window).width() < 810)
-            $.scrollTo(yy, 350);
-        else
-            $.scrollTo(yy-200, 350);
+        $.scrollTo(yy, 350);
       }
     }, onlyEl ? 100 : 1400);
   });
