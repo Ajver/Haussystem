@@ -8,7 +8,6 @@ html {
 }
 
 body {
-  /*  font-family: 'RollandinEmilie';*/
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 500;
   color: transparent;
@@ -328,9 +327,14 @@ p {
 .curtain-1,
 .curtain-2,
 .page-header {
-  transition-timing-function: ease;
-  transition-duration: .5s;
+  transition: width .5s ease;
 }
+
+.container,
+.page-header {
+  transition: transform .5s ease;
+}
+
 
 .curtain-0 {
   background-color: #000;
@@ -392,7 +396,6 @@ body.loaded .main-nav {
 }
 .one-offer section header {
   color: #65A866;
-
   transition: color .5s;
 }
 
@@ -469,7 +472,7 @@ h3{
   color:white;
 }
 .one-offer section.opened-offer header {
-  border:1px solid white;
+  border: 1px solid white;
 }
 
 /*===========================================*/
