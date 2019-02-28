@@ -22,9 +22,9 @@
   .one-offer section header:hover{
     color:white;
   }
-    .one-offer h2:hover {
-  color:#65A866;
-}
+  .one-offer h2:hover {
+    color:#65A866;
+  }
 
   body {
     font-weight: 700;
@@ -46,9 +46,7 @@
     box-sizing: border-box;
     z-index: 100;
     border-bottom: 1px solid #328533;
-    /*    background-color: transparent;*/
     box-shadow: 0 0 0 0 transparent !important;
-
     transform: translateX(-100vw);
 
     transition: transform .5s ease .6s, box-shadow .2s;
@@ -174,7 +172,7 @@
     transform: translate(-50%, -50%) rotate(-90deg);
     border-radius: 90px;
     cursor: pointer;
-      filter: hue-rotate(100deg);
+    filter: hue-rotate(100deg);
   }
 
   .arrow :hover {

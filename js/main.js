@@ -15,8 +15,8 @@ document.getElementById("implementations-btn").addEventListener("click", functio
   scrollToSection('.implementations');
 }, false);
 
-var scrollToSection = function (yy) {
-  $.scrollTo($(yy).offset().top - 80, 500);
+var scrollToSection = function (target) {
+  $.scrollTo($(target).offset().top - 80, 500);
   var pageHeader = document.querySelector(".page-header");
   pageHeader.classList.remove("opened-nav");
 
@@ -60,14 +60,10 @@ offer.forEach((element, index) => {
 
     window.setTimeout(function () {
       if (document.querySelector(".one-offer.opened-offer") !== null) {
-        let offY = window.innerWidth >= 810 ? 1059 : 0;
-        let yy = document.querySelector(".one-offer.opened-offer").offsetTop - 120 + offY;
+        let offY = window.innerWidth <= 810 ? -100 : document.querySelector('.page-header').clientHeight;
+        let yy = document.querySelector(".one-offer.opened-offer").offsetTop + offY - 20;
           
-        if ($(window).width() < 810)
-            $.scrollTo(yy, 350);
-        else
-            $.scrollTo(yy-200, 350);
-            
+        $.scrollTo(yy, 350);
       }
     }, onlyEl ? 100 : 1400);
 
@@ -95,13 +91,10 @@ offerPart.forEach((element, index) => {
     window.setTimeout(function () {
       let openedOffPart = document.querySelector(".one-offer section.opened-offer");
       if (openedOffPart !== null) {
-        let offY = window.innerWidth >= 740 ? 1059 : 0;
-        let yy = openedOffPart.offsetTop - 120 + offY;
+        let offY = window.innerWidth <= 810 ? -100 : document.querySelector('.page-header').clientHeight;
+        let yy = openedOffPart.offsetTop + offY - 20;
 
-        if ($(window).width() < 810)
-            $.scrollTo(yy, 350);
-        else
-            $.scrollTo(yy-200, 350);
+        $.scrollTo(yy, 350);
       }
     }, onlyEl ? 100 : 1400);
   });
